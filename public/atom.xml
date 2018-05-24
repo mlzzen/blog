@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.re0gamer.com/"/>
-  <updated>2018-05-14T07:30:12.876Z</updated>
+  <updated>2018-05-24T15:39:10.398Z</updated>
   <id>http://blog.re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vscode vue ts项目 prettier配置</title>
+    <link href="http://blog.re0gamer.com/2018/05/24/vscode-vue-ts%E9%A1%B9%E7%9B%AE-prettier%E9%85%8D%E7%BD%AE/"/>
+    <id>http://blog.re0gamer.com/2018/05/24/vscode-vue-ts项目-prettier配置/</id>
+    <published>2018-05-24T15:17:37.000Z</published>
+    <updated>2018-05-24T15:39:10.398Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="必装插件-Prettier-Code-formatter"><a href="#必装插件-Prettier-Code-formatter" class="headerlink" title="必装插件 Prettier - Code formatter"></a>必装插件 Prettier - Code formatter</h2><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>typescript 需要tslint和tslint-config-prettier</p><pre><code>yarn add -D tslint tslint tslint-config-prettier</code></pre><p>根目录添加tslint.json</p><pre><code>{    &quot;defaultSeverity&quot;: &quot;warning&quot;,    &quot;extend&quot;: [&quot;tslint:recommended&quot;, &quot;tslint-config-prettier&quot;],    &quot;linterOptions&quot;: {        &quot;exclude&quot;: [&quot;node_modules/**&quot;]    },    &quot;rules&quot;: {        &quot;quotemark&quot;: [true, &quot;single&quot;],        &quot;indent&quot;: [true, &quot;spaces&quot;, 4],        &quot;interface-name&quot;: false,        &quot;ordered-imports&quot;: false,        &quot;object-literal-sort-keys&quot;: false,        &quot;no-consecutive-blank-lines&quot;: false    }}</code></pre><p>样式部分需要stylint和prettier-stylelint</p><pre><code>yanr add -D stylelint prettier-stylelint stylelint-config-ydj</code></pre><p>根目录添加.stylelintrc.js</p><pre><code>module.exports = {    extends: [        &apos;stylelint-config-ydj/scss&apos;, // your stylint config        &apos;./node_modules/prettier-stylelint/config.js&apos;    ],    rules: {        &apos;string-quotes&apos;: &apos;double&apos;    }};</code></pre><p>prettier配置，在根目录添加.prettierrc</p><pre><code>{    &quot;eslintIntegration&quot;: true,    &quot;stylelintIntegration&quot;: true,    &quot;tabWidth&quot;: 4,    &quot;singleQuote&quot;: true,    &quot;semi&quot;: false}</code></pre><p>编辑器配置里面需要加入</p><pre><code>// vetur configuration&quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;,// prettier configuration&quot;prettier.disableLanguages&quot;: [    &quot;vue&quot;],</code></pre><p>参考<a href="https://juejin.im/post/5a791d566fb9a0634853400e" target="_blank" rel="noopener">YDJFE的文章</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;必装插件-Prettier-Code-formatter&quot;&gt;&lt;a href=&quot;#必装插件-Prettier-Code-formatter&quot; class=&quot;headerlink&quot; title=&quot;必装插件 Prettier - Code formatter&quot;&gt;&lt;/a&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>vscode常用插件</title>
