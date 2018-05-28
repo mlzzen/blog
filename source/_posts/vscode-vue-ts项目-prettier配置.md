@@ -6,9 +6,9 @@ tags:
 ## 必装插件 Prettier - Code formatter
 
 ## 配置
-typescript 需要tslint和tslint-config-prettier
+### typescript 需要tslint和tslint-config-prettier
 
-    yarn add -D tslint tslint tslint-config-prettier
+    yarn add -D tslint tslint-config-prettier
 
 根目录添加tslint.json
 
@@ -29,9 +29,9 @@ typescript 需要tslint和tslint-config-prettier
     }
 
 
-样式部分需要stylint和prettier-stylelint
+### 样式部分需要stylint和prettier-stylelint
 
-    yanr add -D stylelint prettier-stylelint stylelint-config-ydj
+    yarn add -D stylelint prettier-stylelint stylelint-config-ydj
 
 根目录添加.stylelintrc.js
 
@@ -45,7 +45,7 @@ typescript 需要tslint和tslint-config-prettier
         }
     };
 
-prettier配置，在根目录添加.prettierrc
+### prettier配置，在根目录添加.prettierrc
 
     {
         "eslintIntegration": true,
@@ -67,6 +67,8 @@ prettier配置，在根目录添加.prettierrc
 
     
 参考[YDJFE的文章](https://juejin.im/post/5a791d566fb9a0634853400e)
+
+
 
 
 
