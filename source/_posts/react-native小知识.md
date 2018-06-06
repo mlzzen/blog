@@ -1,7 +1,7 @@
 ---
 title: react native小知识
 date: 2018-05-13 20:38:54
-tags: react-native react 开发工具
+tags: [react-native, react, 开发工具]
 ---
 1. 执行react-native run-android命令后，开始下载gradle文件，速度非常慢。
     <pre>解决办法：

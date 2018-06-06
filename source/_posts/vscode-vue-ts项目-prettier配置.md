@@ -1,7 +1,7 @@
 ---
 title: vscode vue ts项目 prettier配置
 date: 2018-05-24 23:17:37
-tags:
+tags: [vscode, vue, ts, prettier]
 ---
 ## 必装插件 Prettier - Code formatter
 

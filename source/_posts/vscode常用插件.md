@@ -1,7 +1,7 @@
 ---
 title: vscode常用插件
 date: 2018-05-14 14:26:11
-tags: vscode vscode插件
+tags: [vscode, vscode插件]
 ---
 ## 1.auto import
     在引用某些模块后会提示你引用某个包

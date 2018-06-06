@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.re0gamer.com/"/>
-  <updated>2018-06-06T11:18:05.523Z</updated>
+  <updated>2018-06-06T11:31:47.399Z</updated>
   <id>http://blog.re0gamer.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.re0gamer.com/2018/06/06/letsencrypt%E7%9A%84%E5%85%8D%E8%B4%B9https%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8Enginx%E9%83%A8%E7%BD%B2/"/>
     <id>http://blog.re0gamer.com/2018/06/06/letsencrypt的免费https证书申请与nginx部署/</id>
     <published>2018-06-06T10:44:52.000Z</published>
-    <updated>2018-06-06T11:18:05.523Z</updated>
+    <updated>2018-06-06T11:31:47.399Z</updated>
     
     <content type="html"><![CDATA[<h2 id="使用certbot获取证书"><a href="#使用certbot获取证书" class="headerlink" title="使用certbot获取证书"></a>使用certbot获取证书</h2><ul><li>第一步 选择好使用的软件和系统，然后页面就自动滚动到了相应处。</li><li><p>第二步 使用下面命令安装相关工具。</p>  <pre>yum -y install yum-utils</pre>  <pre>yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional</pre></li><li><p>第三步 安装python-cert-nginx </p>  <pre>$ sudo yum install python2-certbot-nginx</pre></li><li>第四步 使用命令，获得证书  <pre>$ sudo certbot --nginx</pre></li><li><p>第五步 打开nginx.conf 添加</p>  <pre>  server {      listen 443 ssl;      server_name blog.riyue.me;      ssl_certificate /etc/letsencrypt/live/riyue.me/fullchain.pem;      ssl_certificate_key /etc/letsencrypt/live/riyue.me/privkey.pem;      ssl_protocols TLSv1 TLSv1.1 TLSv1.2;      ssl_prefer_server_ciphers on;      ssl_dhparam /etc/ssl/certs/dhparam.pem;      ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';      ssl_session_timeout 1d;      ssl_session_cache shared:SSL:50m;      ssl_stapling on;      ssl_stapling_verify on;      add_header Strict-Transport-Security max-age=15768000;      # The rest of your server block      root /var/www/blog/public;      index index.html index.htm;      location / {              try_files $uri $uri/ =404;      }  }  </pre></li><li><p>第六步 重启nginx</p></li></ul>]]></content>
     
@@ -36,7 +36,9 @@
     </summary>
     
     
-      <category term="nginx https" scheme="http://blog.re0gamer.com/tags/nginx-https/"/>
+      <category term="nginx" scheme="http://blog.re0gamer.com/tags/nginx/"/>
+    
+      <category term="https" scheme="http://blog.re0gamer.com/tags/https/"/>
     
   </entry>
   
@@ -45,7 +47,7 @@
     <link href="http://blog.re0gamer.com/2018/05/24/vscode-vue-ts%E9%A1%B9%E7%9B%AE-prettier%E9%85%8D%E7%BD%AE/"/>
     <id>http://blog.re0gamer.com/2018/05/24/vscode-vue-ts项目-prettier配置/</id>
     <published>2018-05-24T15:17:37.000Z</published>
-    <updated>2018-05-28T16:13:22.407Z</updated>
+    <updated>2018-06-06T11:31:40.626Z</updated>
     
     <content type="html"><![CDATA[<h2 id="必装插件-Prettier-Code-formatter"><a href="#必装插件-Prettier-Code-formatter" class="headerlink" title="必装插件 Prettier - Code formatter"></a>必装插件 Prettier - Code formatter</h2><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="typescript-需要tslint和tslint-config-prettier"><a href="#typescript-需要tslint和tslint-config-prettier" class="headerlink" title="typescript 需要tslint和tslint-config-prettier"></a>typescript 需要tslint和tslint-config-prettier</h3><pre><code>yarn add -D tslint tslint-config-prettier</code></pre><p>根目录添加tslint.json</p><pre><code>{    &quot;defaultSeverity&quot;: &quot;warning&quot;,    &quot;extend&quot;: [&quot;tslint:recommended&quot;, &quot;tslint-config-prettier&quot;],    &quot;linterOptions&quot;: {        &quot;exclude&quot;: [&quot;node_modules/**&quot;]    },    &quot;rules&quot;: {        &quot;quotemark&quot;: [true, &quot;single&quot;],        &quot;indent&quot;: [true, &quot;spaces&quot;, 4],        &quot;interface-name&quot;: false,        &quot;ordered-imports&quot;: false,        &quot;object-literal-sort-keys&quot;: false,        &quot;no-consecutive-blank-lines&quot;: false    }}</code></pre><h3 id="样式部分需要stylint和prettier-stylelint"><a href="#样式部分需要stylint和prettier-stylelint" class="headerlink" title="样式部分需要stylint和prettier-stylelint"></a>样式部分需要stylint和prettier-stylelint</h3><pre><code>yarn add -D stylelint prettier-stylelint stylelint-config-ydj</code></pre><p>根目录添加.stylelintrc.js</p><pre><code>module.exports = {    extends: [        &apos;stylelint-config-ydj/scss&apos;, // your stylint config        &apos;./node_modules/prettier-stylelint/config.js&apos;    ],    rules: {        &apos;string-quotes&apos;: &apos;double&apos;    }};</code></pre><h3 id="prettier配置，在根目录添加-prettierrc"><a href="#prettier配置，在根目录添加-prettierrc" class="headerlink" title="prettier配置，在根目录添加.prettierrc"></a>prettier配置，在根目录添加.prettierrc</h3><pre><code>{    &quot;eslintIntegration&quot;: true,    &quot;stylelintIntegration&quot;: true,    &quot;tabWidth&quot;: 4,    &quot;singleQuote&quot;: true,    &quot;semi&quot;: false}</code></pre><p>编辑器配置里面需要加入</p><pre><code>// vetur configuration&quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;,// prettier configuration&quot;prettier.disableLanguages&quot;: [    &quot;vue&quot;],</code></pre><p>参考<a href="https://juejin.im/post/5a791d566fb9a0634853400e" target="_blank" rel="noopener">YDJFE的文章</a></p>]]></content>
     
@@ -59,6 +61,14 @@
     </summary>
     
     
+      <category term="vscode" scheme="http://blog.re0gamer.com/tags/vscode/"/>
+    
+      <category term="vue" scheme="http://blog.re0gamer.com/tags/vue/"/>
+    
+      <category term="ts" scheme="http://blog.re0gamer.com/tags/ts/"/>
+    
+      <category term="prettier" scheme="http://blog.re0gamer.com/tags/prettier/"/>
+    
   </entry>
   
   <entry>
@@ -66,7 +76,7 @@
     <link href="http://blog.re0gamer.com/2018/05/14/vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
     <id>http://blog.re0gamer.com/2018/05/14/vscode常用插件/</id>
     <published>2018-05-14T06:26:11.000Z</published>
-    <updated>2018-05-28T16:11:48.682Z</updated>
+    <updated>2018-06-06T11:31:21.955Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-auto-import"><a href="#1-auto-import" class="headerlink" title="1.auto import"></a>1.auto import</h2><pre><code>在引用某些模块后会提示你引用某个包</code></pre><h2 id="2-babel-es6-es7"><a href="#2-babel-es6-es7" class="headerlink" title="2.babel es6/es7"></a>2.babel es6/es7</h2><pre><code>babel的es6/es7增强</code></pre><h2 id="3-beautify"><a href="#3-beautify" class="headerlink" title="3.beautify"></a>3.beautify</h2><pre><code>非常好用，的一款格式化代码的插件，能格式化许多种代码。</code></pre><h2 id="4-change-case"><a href="#4-change-case" class="headerlink" title="4.change-case"></a>4.change-case</h2><pre><code>一键转换大小驼峰的风格</code></pre><h2 id="5-debugger-for-chrome"><a href="#5-debugger-for-chrome" class="headerlink" title="5.debugger for chrome"></a>5.debugger for chrome</h2><pre><code>用于在chrome上面的debug</code></pre><h2 id="6-document-this"><a href="#6-document-this" class="headerlink" title="6.document this"></a>6.document this</h2><pre><code>主要用于代码的批注，后期文档的生成。</code></pre><h2 id="7-easy-less"><a href="#7-easy-less" class="headerlink" title="7.easy less"></a>7.easy less</h2><pre><code>自动把less编译为css</code></pre><h2 id="8-eslint"><a href="#8-eslint" class="headerlink" title="8.eslint"></a>8.eslint</h2><pre><code>JavaScript和JSX检查工具</code></pre><h2 id="9-git-history"><a href="#9-git-history" class="headerlink" title="9.git history"></a>9.git history</h2><pre><code>增强了vscode的git功能</code></pre><h2 id="10-go"><a href="#10-go" class="headerlink" title="10.go"></a>10.go</h2><pre><code>微软官方出的go语言的插件</code></pre><h2 id="11-html-css-support"><a href="#11-html-css-support" class="headerlink" title="11.html css support"></a>11.html css support</h2><pre><code>html里面的class提示</code></pre><h2 id="12-html-snippets"><a href="#12-html-snippets" class="headerlink" title="12.html snippets"></a>12.html snippets</h2><pre><code>html的代码补全</code></pre><h2 id="13-javascript-es6-code-snippets"><a href="#13-javascript-es6-code-snippets" class="headerlink" title="13.javascript(es6) code snippets"></a>13.javascript(es6) code snippets</h2><pre><code>es6代码提示</code></pre><h2 id="14-node-debug"><a href="#14-node-debug" class="headerlink" title="14.node debug"></a>14.node debug</h2><pre><code>提示node.js代码</code></pre><h2 id="15-one-dark-pro"><a href="#15-one-dark-pro" class="headerlink" title="15.one dark pro"></a>15.one dark pro</h2><pre><code>热门的主题</code></pre><h2 id="16-open-in-browser"><a href="#16-open-in-browser" class="headerlink" title="16.open in browser"></a>16.open in browser</h2><pre><code>直接在浏览器里面打开</code></pre><h2 id="17-output-colorizer"><a href="#17-output-colorizer" class="headerlink" title="17.output colorizer"></a>17.output colorizer</h2><pre><code>output，debug,extensions增强</code></pre><h2 id="18-path-autocomplete"><a href="#18-path-autocomplete" class="headerlink" title="18.path autocomplete"></a>18.path autocomplete</h2><pre><code>路径提示</code></pre><h2 id="19-react-beautify"><a href="#19-react-beautify" class="headerlink" title="19.react-beautify"></a>19.react-beautify</h2><pre><code>react代码格式化</code></pre><h2 id="20-react-native-react"><a href="#20-react-native-react" class="headerlink" title="20.react-native/react"></a>20.react-native/react</h2><pre><code>react react-native代码的提示</code></pre><h2 id="21-reactjs-code-snippets"><a href="#21-reactjs-code-snippets" class="headerlink" title="21.reactjs code snippets"></a>21.reactjs code snippets</h2><pre><code>react 代码提示</code></pre><h2 id="22-TODO-Hightlight"><a href="#22-TODO-Hightlight" class="headerlink" title="22.TODO Hightlight"></a>22.TODO Hightlight</h2><pre><code>高亮todo</code></pre><h2 id="23-TSLint"><a href="#23-TSLint" class="headerlink" title="23.TSLint"></a>23.TSLint</h2><pre><code>ts代码检查工具</code></pre><h2 id="24-vetur"><a href="#24-vetur" class="headerlink" title="24.vetur"></a>24.vetur</h2><pre><code>vue代码提示，检测，格式化工具。</code></pre><h2 id="25-vscode-icons"><a href="#25-vscode-icons" class="headerlink" title="25.vscode-icons"></a>25.vscode-icons</h2><pre><code>文件图标</code></pre>]]></content>
     
@@ -81,7 +91,9 @@
     </summary>
     
     
-      <category term="vscode vscode插件" scheme="http://blog.re0gamer.com/tags/vscode-vscode%E6%8F%92%E4%BB%B6/"/>
+      <category term="vscode" scheme="http://blog.re0gamer.com/tags/vscode/"/>
+    
+      <category term="vscode插件" scheme="http://blog.re0gamer.com/tags/vscode%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
@@ -90,7 +102,7 @@
     <link href="http://blog.re0gamer.com/2018/05/13/react-native%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     <id>http://blog.re0gamer.com/2018/05/13/react-native小知识/</id>
     <published>2018-05-13T12:38:54.000Z</published>
-    <updated>2018-05-28T16:11:48.680Z</updated>
+    <updated>2018-06-06T11:31:45.201Z</updated>
     
     <content type="html"><![CDATA[<ol><li>执行react-native run-android命令后，开始下载gradle文件，速度非常慢。<br> <pre>解决办法：<pre><code>1. 手动使用迅雷下载，迅雷下载好后，把文件放入到一个文件夹中，最好路径不带中文。2. 修改 项目名\android\gradle\wrapper 下的gradle-wrapper.properties，把下 载的地址改为自己已经下好的地址。distributionUrl=file\:///D:/gradle-2.14.1-all.zip  冒号要用\转</code></pre></pre></li><li>执行react-native run-android命令后，使用的vs的模拟器，连接不上模拟器。<br> <pre>解决办法： 参考的 <a href="http://www.cnblogs.com/tianma3798/p/5911395.html" target="_blank" rel="noopener">http://www.cnblogs.com/tianma3798/p/5911395.html</a><pre><code>1. 打开模拟器的“工具”菜单。2. 选项卡切换到Network。3. 使用命令adb connect 169.254.138.177:5555就连接上了。4. 重新运行命令react-native run-android。</code></pre></pre></li></ol>]]></content>
     
@@ -106,7 +118,11 @@
     </summary>
     
     
-      <category term="react-native react 开发工具" scheme="http://blog.re0gamer.com/tags/react-native-react-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="react-native" scheme="http://blog.re0gamer.com/tags/react-native/"/>
+    
+      <category term="react" scheme="http://blog.re0gamer.com/tags/react/"/>
+    
+      <category term="开发工具" scheme="http://blog.re0gamer.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
