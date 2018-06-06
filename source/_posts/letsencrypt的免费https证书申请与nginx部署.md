@@ -1,7 +1,7 @@
 ---
 title: letsencrypt的免费https证书申请与nginx部署
 date: 2018-06-06 18:44:52
-tags:
+tags: nginx https
 ---
 
 ## 使用certbot获取证书
