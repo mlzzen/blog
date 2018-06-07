@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.re0gamer.com/"/>
-  <updated>2018-06-06T11:31:47.399Z</updated>
+  <updated>2018-06-07T15:22:22.012Z</updated>
   <id>http://blog.re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>子域名配置</title>
+    <link href="http://blog.re0gamer.com/2018/06/07/%E5%AD%90%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/"/>
+    <id>http://blog.re0gamer.com/2018/06/07/子域名配置/</id>
+    <published>2018-06-07T15:12:48.000Z</published>
+    <updated>2018-06-07T15:22:22.012Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="域名管理处的配置"><a href="#域名管理处的配置" class="headerlink" title="域名管理处的配置"></a>域名管理处的配置</h2><p>我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dnspod.net f1g1ns2.dnspod.net。然后在dnspod 添加了*domain.com 泛域名解析，然后要等一会儿，毕竟namesilo是国外的域名商，我开始以为没有作用，然后反复试各种方法，浪费了很多时间。</p><h2 id="nginx-的配置"><a href="#nginx-的配置" class="headerlink" title="nginx 的配置"></a>nginx 的配置</h2><pre><code>server{    listen 80;    server_name  riyue.me;    if ($scheme != &quot;https&quot;) {        return 301 https://$host$request_uri;    }    root   /var/www/riyue;    index  index.php index.html index.htm;    location ~ \.php$ {        include /etc/nginx/fastcgi_params;        fastcgi_pass 127.0.0.1:9000;        fastcgi_index index.php;    }}server{    listen 80;    server_name  blog.riyue.me;    # if ($scheme != &quot;https&quot;) {    #     return 301 https://$host$request_uri;    # }    root   /var/www/blog/public;    index  index.php index.html index.htm;    location ~ \.php$ {        include /etc/nginx/fastcgi_params;        fastcgi_pass 127.0.0.1:9000;        fastcgi_index index.php;    }}</code></pre><h2 id="重启nginx"><a href="#重启nginx" class="headerlink" title="重启nginx"></a>重启nginx</h2><pre><code>nginx -s reload</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;域名管理处的配置&quot;&gt;&lt;a href=&quot;#域名管理处的配置&quot; class=&quot;headerlink&quot; title=&quot;域名管理处的配置&quot;&gt;&lt;/a&gt;域名管理处的配置&lt;/h2&gt;&lt;p&gt;我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dn
+      
+    
+    </summary>
+    
+    
+      <category term="域名" scheme="http://blog.re0gamer.com/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+      <category term="nginx" scheme="http://blog.re0gamer.com/tags/nginx/"/>
+    
+      <category term="dns" scheme="http://blog.re0gamer.com/tags/dns/"/>
+    
+  </entry>
   
   <entry>
     <title>letsencrypt的免费https证书申请与nginx部署</title>
@@ -131,7 +158,7 @@
     <link href="http://blog.re0gamer.com/2018/05/13/%E5%89%8D%E7%AB%AF%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8D/"/>
     <id>http://blog.re0gamer.com/2018/05/13/前端推荐书籍/</id>
     <published>2018-05-13T12:28:00.000Z</published>
-    <updated>2018-05-28T16:11:48.683Z</updated>
+    <updated>2018-06-06T11:30:05.294Z</updated>
     
     <content type="html"><![CDATA[<ol><li>《JavaScript权威指南（第六版）》</li><li>《JavaScript高级程序设计》</li><li>《JavaScript DOM编程艺术》</li><li>《JavaScript编程精解》</li><li>《JQuery权威指南》</li><li>《编写可维护的JavaScript》</li><li>《JavaScript异步编程》</li><li>《高性能JavaScript》</li></ol>]]></content>
     
