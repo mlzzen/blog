@@ -14,25 +14,25 @@
     
     
     
-    <title>子域名配置 | 阿良良的博客</title>
+    <title>脚本测试 | 阿良良的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="域名,nginx,dns">
-    <meta name="description" content="域名管理处的配置我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dnspod.net f1g1ns2.dnspod.net。然后在dnspod 添加了*domain.com 泛域名解析，然后要等一会儿，毕竟namesilo是国外的域名商，我开始以为没有作用，然后反复试各种方法，浪费了很多时间。 nginx 的配置server{     listen 80;">
-<meta name="keywords" content="域名,nginx,dns">
+    <meta name="keywords" content="ps1,powershell,脚本">
+    <meta name="description" content="使用creanme.github.io与hexo阶段由于github.io速度太慢，而且电脑重装过一次系统，以前写的博文都丢失了，只剩下github上生成的静态文件，.md文件都没了。 把hexo生成的文件部署在国内服务器上之前买的vps都是国外的，访问速度太慢，不好用来搭建国内访问的网站，于是买了几年某良心云。  首先在github上面建个仓库blog，hexo与master分支，hexo分支用">
+<meta name="keywords" content="ps1,powershell,脚本">
 <meta property="og:type" content="article">
-<meta property="og:title" content="子域名配置">
-<meta property="og:url" content="http://blog.re0gamer.com/2018/06/07/子域名配置/index.html">
+<meta property="og:title" content="脚本测试">
+<meta property="og:url" content="http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/index.html">
 <meta property="og:site_name" content="阿良良的博客">
-<meta property="og:description" content="域名管理处的配置我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dnspod.net f1g1ns2.dnspod.net。然后在dnspod 添加了*domain.com 泛域名解析，然后要等一会儿，毕竟namesilo是国外的域名商，我开始以为没有作用，然后反复试各种方法，浪费了很多时间。 nginx 的配置server{     listen 80;">
+<meta property="og:description" content="使用creanme.github.io与hexo阶段由于github.io速度太慢，而且电脑重装过一次系统，以前写的博文都丢失了，只剩下github上生成的静态文件，.md文件都没了。 把hexo生成的文件部署在国内服务器上之前买的vps都是国外的，访问速度太慢，不好用来搭建国内访问的网站，于是买了几年某良心云。  首先在github上面建个仓库blog，hexo与master分支，hexo分支用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-07T16:21:18.006Z">
+<meta property="og:updated_time" content="2018-06-13T11:20:46.901Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="子域名配置">
-<meta name="twitter:description" content="域名管理处的配置我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dnspod.net f1g1ns2.dnspod.net。然后在dnspod 添加了*domain.com 泛域名解析，然后要等一会儿，毕竟namesilo是国外的域名商，我开始以为没有作用，然后反复试各种方法，浪费了很多时间。 nginx 的配置server{     listen 80;">
+<meta name="twitter:title" content="脚本测试">
+<meta name="twitter:description" content="使用creanme.github.io与hexo阶段由于github.io速度太慢，而且电脑重装过一次系统，以前写的博文都丢失了，只剩下github上生成的静态文件，.md文件都没了。 把hexo生成的文件部署在国内服务器上之前买的vps都是国外的，访问速度太慢，不好用来搭建国内访问的网站，于是买了几年某良心云。  首先在github上面建个仓库blog，hexo与master分支，hexo分支用">
     
         <link rel="alternate" type="application/atom+xml" title="阿良良的博客" href="/atom.xml">
     
@@ -120,7 +120,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">子域名配置</div>
+        <div class="flex-col header-title ellipsis">脚本测试</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -142,11 +142,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">子域名配置</h1>
+        <h1 class="title">脚本测试</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-06-07T15:12:48.000Z" itemprop="datePublished" class="page-time">
-  2018-06-07
+                <time datetime="2018-06-07T16:27:31.000Z" itemprop="datePublished" class="page-time">
+  2018-06-08
 </time>
 
 
@@ -165,18 +165,18 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名管理处的配置"><span class="post-toc-number">1.</span> <span class="post-toc-text">域名管理处的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#nginx-的配置"><span class="post-toc-number">2.</span> <span class="post-toc-text">nginx 的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#重启nginx"><span class="post-toc-number">3.</span> <span class="post-toc-text">重启nginx</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用creanme-github-io与hexo阶段"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用creanme.github.io与hexo阶段</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#把hexo生成的文件部署在国内服务器上"><span class="post-toc-number">2.</span> <span class="post-toc-text">把hexo生成的文件部署在国内服务器上</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#脚本"><span class="post-toc-number">3.</span> <span class="post-toc-text">脚本</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-子域名配置"
+<article id="post-博客的更新与脚本"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">子域名配置</h1>
+        <h1 class="post-card-title">脚本测试</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-06-07 23:12:48" datetime="2018-06-07T15:12:48.000Z"  itemprop="datePublished">2018-06-07</time>
+            <time class="post-time" title="2018-06-08 00:27:31" datetime="2018-06-07T16:27:31.000Z"  itemprop="datePublished">2018-06-08</time>
 
             
 
@@ -189,38 +189,14 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="域名管理处的配置"><a href="#域名管理处的配置" class="headerlink" title="域名管理处的配置"></a>域名管理处的配置</h2><p>我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dnspod.net f1g1ns2.dnspod.net。然后在dnspod 添加了*domain.com 泛域名解析，然后要等一会儿，毕竟namesilo是国外的域名商，我开始以为没有作用，然后反复试各种方法，浪费了很多时间。</p>
-<h2 id="nginx-的配置"><a href="#nginx-的配置" class="headerlink" title="nginx 的配置"></a>nginx 的配置</h2><pre><code>server{
-    listen 80;
-    server_name  riyue.me;
-    if ($scheme != &quot;https&quot;) {
-        return 301 https://$host$request_uri;
-    }
-    root   /var/www/riyue;
-    index  index.php index.html index.htm;
-    location ~ \.php$ {
-        include /etc/nginx/fastcgi_params;
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_index index.php;
-    }
-}
+            <h2 id="使用creanme-github-io与hexo阶段"><a href="#使用creanme-github-io与hexo阶段" class="headerlink" title="使用creanme.github.io与hexo阶段"></a>使用creanme.github.io与hexo阶段</h2><p>由于github.io速度太慢，而且电脑重装过一次系统，以前写的博文都丢失了，只剩下github上生成的静态文件，.md文件都没了。</p>
+<h2 id="把hexo生成的文件部署在国内服务器上"><a href="#把hexo生成的文件部署在国内服务器上" class="headerlink" title="把hexo生成的文件部署在国内服务器上"></a>把hexo生成的文件部署在国内服务器上</h2><p>之前买的vps都是国外的，访问速度太慢，不好用来搭建国内访问的网站，于是买了几年某良心云。</p>
+<ol>
+<li>首先在github上面建个仓库blog，hexo与master分支，hexo分支用来保存整个项目，方便以后本地电脑上的项目丢失了，直接clone下来就可以继续更新；master分支主要用来展示.md。</li>
+<li>写博客就在本地上写，写完hexo g生成静态文件。然后把整个项目push到hexo分支，把source/_post文件夹里面的文件push到master。</li>
+</ol>
+<h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;update blog&quot;</span><br><span class="line">git push origin hexo</span><br><span class="line">cd .\source\_posts</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;update blog&quot;</span><br><span class="line">git push origin master</span><br><span class="line">ssh -i &quot;密钥文件绝对路径&quot; name@address &gt; /dev/null 2&gt;&amp;1 &lt;&lt; eeooff</span><br><span class="line">cd /var/www/blog</span><br><span class="line">git pull origin hexo</span><br><span class="line">echo done!</span><br></pre></td></tr></table></figure>
 
-server{
-    listen 80;
-    server_name  blog.riyue.me;
-    # if ($scheme != &quot;https&quot;) {
-    #     return 301 https://$host$request_uri;
-    # }
-    root   /var/www/blog/public;
-    index  index.php index.html index.htm;
-    location ~ \.php$ {
-        include /etc/nginx/fastcgi_params;
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_index index.php;
-    }
-}
-</code></pre><h2 id="重启nginx"><a href="#重启nginx" class="headerlink" title="重启nginx"></a>重启nginx</h2><pre><code>nginx -s reload
-</code></pre>
         </div>
 
         <blockquote class="post-copyright">
@@ -228,12 +204,12 @@ server{
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-06-07T16:21:18.006Z" itemprop="dateUpdated">2018-06-08 00:21:18</time>
+    Last updated: <time datetime="2018-06-13T11:20:46.901Z" itemprop="dateUpdated">2018-06-13 19:20:46</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/06/07/子域名配置/" target="_blank" rel="external">http://blog.re0gamer.com/2018/06/07/子域名配置/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/06/08/博客的更新与脚本/" target="_blank" rel="external">http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/</a>
         
     </div>
     
@@ -250,7 +226,7 @@ server{
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dns/">dns</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nginx/">nginx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/域名/">域名</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/powershell/">powershell</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ps1/">ps1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/脚本/">脚本</a></li></ul>
 
 
             
@@ -260,7 +236,7 @@ server{
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.re0gamer.com/2018/06/07/子域名配置/&title=《子域名配置》 — 阿良良的博客&pic=http://blog.re0gamer.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/&title=《脚本测试》 — 阿良良的博客&pic=http://blog.re0gamer.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -270,22 +246,22 @@ server{
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.re0gamer.com/2018/06/07/子域名配置/&title=《子域名配置》 — 阿良良的博客&source=博客" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/&title=《脚本测试》 — 阿良良的博客&source=博客" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.re0gamer.com/2018/06/07/子域名配置/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《子域名配置》 — 阿良良的博客&url=http://blog.re0gamer.com/2018/06/07/子域名配置/&via=http://blog.re0gamer.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《脚本测试》 — 阿良良的博客&url=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/&via=http://blog.re0gamer.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.re0gamer.com/2018/06/07/子域名配置/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -308,18 +284,18 @@ server{
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2018/06/08/博客的更新与脚本/" id="post-prev" class="post-nav-link">
+      <a href="/2018/06/13/尝试使用eggjs-typescript-mysql/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">脚本测试</h4>
+        <h4 class="title">eggjs+typescript+mysql</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/06/06/letsencrypt的免费https证书申请与nginx部署/" id="post-next" class="post-nav-link">
+      <a href="/2018/06/07/子域名配置/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">letsencrypt的免费https证书申请与nginx部署</h4>
+        <h4 class="title">子域名配置</h4>
       </a>
     </div>
   
@@ -392,7 +368,7 @@ server{
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.re0gamer.com/2018/06/07/子域名配置/&title=《子域名配置》 — 阿良良的博客&pic=http://blog.re0gamer.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/&title=《脚本测试》 — 阿良良的博客&pic=http://blog.re0gamer.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -402,22 +378,22 @@ server{
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.re0gamer.com/2018/06/07/子域名配置/&title=《子域名配置》 — 阿良良的博客&source=博客" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/&title=《脚本测试》 — 阿良良的博客&source=博客" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.re0gamer.com/2018/06/07/子域名配置/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《子域名配置》 — 阿良良的博客&url=http://blog.re0gamer.com/2018/06/07/子域名配置/&via=http://blog.re0gamer.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《脚本测试》 — 阿良良的博客&url=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/&via=http://blog.re0gamer.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.re0gamer.com/2018/06/07/子域名配置/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -428,7 +404,7 @@ server{
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.re0gamer.com/2018/06/07/子域名配置/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://blog.re0gamer.com/2018/06/08/博客的更新与脚本/" alt="微信分享二维码">
 </div>
 
 
