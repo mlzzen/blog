@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.re0gamer.com/"/>
-  <updated>2018-08-17T12:32:26.824Z</updated>
+  <updated>2018-08-17T13:10:53.895Z</updated>
   <id>https://blog.re0gamer.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.re0gamer.com/2018/08/17/%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%89%88powershell%EF%BC%8C%E6%8A%8APWSH-Admin%E6%B7%BB%E5%8A%A0%E8%BF%9Bshift%E5%8F%B3%E9%94%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%8F%9C%E5%8D%95%E9%87%8C/"/>
     <id>https://blog.re0gamer.com/2018/08/17/安装最新版powershell，把PWSH-Admin添加进shift右键文件夹的菜单里/</id>
     <published>2018-08-17T12:27:31.000Z</published>
-    <updated>2018-08-17T12:32:26.824Z</updated>
+    <updated>2018-08-17T13:10:53.895Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装最新版powershell"><a href="#安装最新版powershell" class="headerlink" title="安装最新版powershell"></a>安装最新版powershell</h2><p>微软把powershell开源了很久了，最新版要在github上面下载<br><a href="https://github.com/PowerShell/PowerShell/releases" target="_blank" rel="noopener">https://github.com/PowerShell/PowerShell/releases</a></p><h2 id="把以admin启动最新版powershell添加进注册表"><a href="#把以admin启动最新版powershell添加进注册表" class="headerlink" title="把以admin启动最新版powershell添加进注册表"></a>把以admin启动最新版powershell添加进注册表</h2><ol><li>win+R 输入regedit打开注册表。</li><li>来到路径 HKEY_CLASSES_ROOT\Directory\Background\shell 里面。</li><li>右键shell新建项，取名叫“PWSHAsAdmin”，名字随便取的。</li><li>给右侧的的（默认）赋值为“PWSH Admin”。</li><li>在右侧新建字符串Extended，类型为REG_SZ。</li><li>在右侧新建字符串HasLUAShield，类型为REG_SZ。</li><li>在右侧新建字符串Icon,类型为REG_SZ, 值为pwsh.exe。<br>如图所示：<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://wx4.sinaimg.cn/mw690/6dd11bf2gy1fucz2rs9r4j20m80blmy9.jpg" alt="图片描述" title="">                </div>                <div class="image-caption">图片描述</div>            </figure></li></ol><ol><li>右键点击“PWSHAsAdmin”,新建项“command”。</li><li>在右侧把默认值改为pwsh -windowstyle hidden -Command “Start-Process cmd -ArgumentList ‘/s,/k,pushd,%V &amp;&amp; start pwsh &amp;&amp; exit’ -Verb RunAs”<br>如图所示：<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://wx1.sinaimg.cn/mw690/6dd11bf2gy1fucz2v2657j20m80bl40l.jpg" alt="图片描述" title="">                </div>                <div class="image-caption">图片描述</div>            </figure></li></ol><h2 id="试试成果"><a href="#试试成果" class="headerlink" title="试试成果"></a>试试成果</h2><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://wx3.sinaimg.cn/mw690/6dd11bf2gy1fucxr9jameg20v70l648v.gif" alt="以管理员权限打开powershell" title="">                </div>                <div class="image-caption">以管理员权限打开powershell</div>            </figure>]]></content>
     
@@ -34,6 +34,8 @@
     
     </summary>
     
+    
+      <category term="powershell" scheme="https://blog.re0gamer.com/tags/powershell/"/>
     
   </entry>
   
