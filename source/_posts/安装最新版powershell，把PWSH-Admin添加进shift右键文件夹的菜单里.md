@@ -1,7 +1,7 @@
 ---
 title: 安装最新版powershell，把PWSH Admin添加进shift右键文件夹的菜单里
 date: 2018-08-17 20:27:31
-tags:
+tags: powershell
 ---
 
 ## 安装最新版powershell
