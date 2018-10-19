@@ -171,65 +171,65 @@
             }
         })(),
         hideOnMask: [],
-        modal: function (target) {
-            this.$modal = $(target);
-            this.$off = this.$modal.querySelector('.close');
+        // modal: function (target) {
+        //     this.$modal = $(target);
+        //     this.$off = this.$modal.querySelector('.close');
 
-            var _this = this;
+        //     var _this = this;
 
-            this.show = function () {
-                mask.classList.add('in');
-                _this.$modal.classList.add('ready');
-                setTimeout(function () {
-                    _this.$modal.classList.add('in');
-                }, 0)
-            }
+        //     this.show = function () {
+        //         mask.classList.add('in');
+        //         _this.$modal.classList.add('ready');
+        //         setTimeout(function () {
+        //             _this.$modal.classList.add('in');
+        //         }, 0)
+        //     }
 
-            this.onHide = noop;
+        //     this.onHide = noop;
 
-            this.hide = function () {
-                _this.onHide();
-                mask.classList.remove('in');
-                _this.$modal.classList.remove('in');
-                setTimeout(function () {
-                    _this.$modal.classList.remove('ready');
-                }, 300)
-            }
+        //     this.hide = function () {
+        //         _this.onHide();
+        //         mask.classList.remove('in');
+        //         _this.$modal.classList.remove('in');
+        //         setTimeout(function () {
+        //             _this.$modal.classList.remove('ready');
+        //         }, 300)
+        //     }
 
-            this.toggle = function () {
-                return _this.$modal.classList.contains('in') ? _this.hide() : _this.show();
-            }
+        //     this.toggle = function () {
+        //         return _this.$modal.classList.contains('in') ? _this.hide() : _this.show();
+        //     }
 
-            Blog.hideOnMask.push(this.hide);
-            this.$off && this.$off.addEventListener(even, this.hide);
-        },
-        share: function () {
+        //     Blog.hideOnMask.push(this.hide);
+        //     this.$off && this.$off.addEventListener(even, this.hide);
+        // },
+        // share: function () {
 
-            var pageShare = $('#pageShare'),
-                fab = $('#shareFab');
+        //     var pageShare = $('#pageShare'),
+        //         fab = $('#shareFab');
 
-            var shareModal = new this.modal('#globalShare');
+        //     var shareModal = new this.modal('#globalShare');
 
-            $('#menuShare').addEventListener(even, shareModal.toggle);
+        //     $('#menuShare').addEventListener(even, shareModal.toggle);
 
-            if (fab) {
-                fab.addEventListener(even, function () {
-                    pageShare.classList.toggle('in')
-                }, false)
+        //     if (fab) {
+        //         fab.addEventListener(even, function () {
+        //             pageShare.classList.toggle('in')
+        //         }, false)
 
-                d.addEventListener(even, function (e) {
-                    !fab.contains(e.target) && pageShare.classList.remove('in')
-                }, false)
-            }
+        //         d.addEventListener(even, function (e) {
+        //             !fab.contains(e.target) && pageShare.classList.remove('in')
+        //         }, false)
+        //     }
 
-            var wxModal = new this.modal('#wxShare');
-            wxModal.onHide = shareModal.hide;
+        //     var wxModal = new this.modal('#wxShare');
+        //     wxModal.onHide = shareModal.hide;
 
-            forEach.call($$('.wxFab'), function (el) {
-                el.addEventListener(even, wxModal.toggle)
-            })
+        //     forEach.call($$('.wxFab'), function (el) {
+        //         el.addEventListener(even, wxModal.toggle)
+        //     })
 
-        },
+        // },
         search: function () {
             var searchWrap = $('#search-wrap');
 

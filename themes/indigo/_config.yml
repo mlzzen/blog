@@ -35,7 +35,7 @@ brand: /img/brand.jpg
 favicon: /favicon.ico
 
 # email
-email: creanme@live.cn
+email: creanme@live.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'
@@ -56,7 +56,7 @@ archive_yearly: true
 show_last_updated: true
 
 # 是否开启分享
-share: true
+share: false
 
 # 是否开启打赏，关闭 reward: false
 reward: false
