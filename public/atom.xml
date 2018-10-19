@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://blog.re0gamer.com/"/>
+  <link href="https://re0gamer.com/"/>
   <updated>2018-08-17T13:10:53.895Z</updated>
-  <id>https://blog.re0gamer.com/</id>
+  <id>https://re0gamer.com/</id>
   
   <author>
     <name>Creanme</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>安装最新版powershell，把PWSH Admin添加进shift右键文件夹的菜单里</title>
-    <link href="https://blog.re0gamer.com/2018/08/17/%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%89%88powershell%EF%BC%8C%E6%8A%8APWSH-Admin%E6%B7%BB%E5%8A%A0%E8%BF%9Bshift%E5%8F%B3%E9%94%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%8F%9C%E5%8D%95%E9%87%8C/"/>
-    <id>https://blog.re0gamer.com/2018/08/17/安装最新版powershell，把PWSH-Admin添加进shift右键文件夹的菜单里/</id>
+    <link href="https://re0gamer.com/2018/08/17/%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%89%88powershell%EF%BC%8C%E6%8A%8APWSH-Admin%E6%B7%BB%E5%8A%A0%E8%BF%9Bshift%E5%8F%B3%E9%94%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%8F%9C%E5%8D%95%E9%87%8C/"/>
+    <id>https://re0gamer.com/2018/08/17/安装最新版powershell，把PWSH-Admin添加进shift右键文件夹的菜单里/</id>
     <published>2018-08-17T12:27:31.000Z</published>
     <updated>2018-08-17T13:10:53.895Z</updated>
     
@@ -35,14 +35,14 @@
     </summary>
     
     
-      <category term="powershell" scheme="https://blog.re0gamer.com/tags/powershell/"/>
+      <category term="powershell" scheme="https://re0gamer.com/tags/powershell/"/>
     
   </entry>
   
   <entry>
     <title>eggjs+typescript+mysql</title>
-    <link href="https://blog.re0gamer.com/2018/06/13/%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8eggjs-typescript-mysql/"/>
-    <id>https://blog.re0gamer.com/2018/06/13/尝试使用eggjs-typescript-mysql/</id>
+    <link href="https://re0gamer.com/2018/06/13/%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8eggjs-typescript-mysql/"/>
+    <id>https://re0gamer.com/2018/06/13/尝试使用eggjs-typescript-mysql/</id>
     <published>2018-06-13T09:44:52.000Z</published>
     <updated>2018-07-08T05:09:55.052Z</updated>
     
@@ -58,20 +58,20 @@
     </summary>
     
     
-      <category term="eggjs" scheme="https://blog.re0gamer.com/tags/eggjs/"/>
+      <category term="eggjs" scheme="https://re0gamer.com/tags/eggjs/"/>
     
-      <category term="typescript" scheme="https://blog.re0gamer.com/tags/typescript/"/>
+      <category term="typescript" scheme="https://re0gamer.com/tags/typescript/"/>
     
-      <category term="mysql" scheme="https://blog.re0gamer.com/tags/mysql/"/>
+      <category term="mysql" scheme="https://re0gamer.com/tags/mysql/"/>
     
-      <category term="nodejs" scheme="https://blog.re0gamer.com/tags/nodejs/"/>
+      <category term="nodejs" scheme="https://re0gamer.com/tags/nodejs/"/>
     
   </entry>
   
   <entry>
     <title>博客的更新与脚本</title>
-    <link href="https://blog.re0gamer.com/2018/06/08/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9B%B4%E6%96%B0%E4%B8%8E%E8%84%9A%E6%9C%AC/"/>
-    <id>https://blog.re0gamer.com/2018/06/08/博客的更新与脚本/</id>
+    <link href="https://re0gamer.com/2018/06/08/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9B%B4%E6%96%B0%E4%B8%8E%E8%84%9A%E6%9C%AC/"/>
+    <id>https://re0gamer.com/2018/06/08/博客的更新与脚本/</id>
     <published>2018-06-07T16:27:31.000Z</published>
     <updated>2018-09-18T15:07:12.889Z</updated>
     
@@ -87,18 +87,18 @@
     </summary>
     
     
-      <category term="ps1" scheme="https://blog.re0gamer.com/tags/ps1/"/>
+      <category term="ps1" scheme="https://re0gamer.com/tags/ps1/"/>
     
-      <category term="powershell" scheme="https://blog.re0gamer.com/tags/powershell/"/>
+      <category term="powershell" scheme="https://re0gamer.com/tags/powershell/"/>
     
-      <category term="脚本" scheme="https://blog.re0gamer.com/tags/%E8%84%9A%E6%9C%AC/"/>
+      <category term="脚本" scheme="https://re0gamer.com/tags/%E8%84%9A%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>子域名配置</title>
-    <link href="https://blog.re0gamer.com/2018/06/07/%E5%AD%90%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/"/>
-    <id>https://blog.re0gamer.com/2018/06/07/子域名配置/</id>
+    <link href="https://re0gamer.com/2018/06/07/%E5%AD%90%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/"/>
+    <id>https://re0gamer.com/2018/06/07/子域名配置/</id>
     <published>2018-06-07T15:12:48.000Z</published>
     <updated>2018-07-08T05:09:55.051Z</updated>
     
@@ -114,18 +114,18 @@
     </summary>
     
     
-      <category term="nginx" scheme="https://blog.re0gamer.com/tags/nginx/"/>
+      <category term="nginx" scheme="https://re0gamer.com/tags/nginx/"/>
     
-      <category term="域名" scheme="https://blog.re0gamer.com/tags/%E5%9F%9F%E5%90%8D/"/>
+      <category term="域名" scheme="https://re0gamer.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
-      <category term="dns" scheme="https://blog.re0gamer.com/tags/dns/"/>
+      <category term="dns" scheme="https://re0gamer.com/tags/dns/"/>
     
   </entry>
   
   <entry>
     <title>letsencrypt的免费https证书申请与nginx部署</title>
-    <link href="https://blog.re0gamer.com/2018/06/06/letsencrypt%E7%9A%84%E5%85%8D%E8%B4%B9https%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8Enginx%E9%83%A8%E7%BD%B2/"/>
-    <id>https://blog.re0gamer.com/2018/06/06/letsencrypt的免费https证书申请与nginx部署/</id>
+    <link href="https://re0gamer.com/2018/06/06/letsencrypt%E7%9A%84%E5%85%8D%E8%B4%B9https%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8Enginx%E9%83%A8%E7%BD%B2/"/>
+    <id>https://re0gamer.com/2018/06/06/letsencrypt的免费https证书申请与nginx部署/</id>
     <published>2018-06-06T10:44:52.000Z</published>
     <updated>2018-07-08T05:09:55.050Z</updated>
     
@@ -142,16 +142,16 @@
     </summary>
     
     
-      <category term="nginx" scheme="https://blog.re0gamer.com/tags/nginx/"/>
+      <category term="nginx" scheme="https://re0gamer.com/tags/nginx/"/>
     
-      <category term="https" scheme="https://blog.re0gamer.com/tags/https/"/>
+      <category term="https" scheme="https://re0gamer.com/tags/https/"/>
     
   </entry>
   
   <entry>
     <title>vscode vue ts项目 prettier配置</title>
-    <link href="https://blog.re0gamer.com/2018/05/24/vscode-vue-ts%E9%A1%B9%E7%9B%AE-prettier%E9%85%8D%E7%BD%AE/"/>
-    <id>https://blog.re0gamer.com/2018/05/24/vscode-vue-ts项目-prettier配置/</id>
+    <link href="https://re0gamer.com/2018/05/24/vscode-vue-ts%E9%A1%B9%E7%9B%AE-prettier%E9%85%8D%E7%BD%AE/"/>
+    <id>https://re0gamer.com/2018/05/24/vscode-vue-ts项目-prettier配置/</id>
     <published>2018-05-24T15:17:37.000Z</published>
     <updated>2018-07-08T05:09:55.050Z</updated>
     
@@ -167,20 +167,20 @@
     </summary>
     
     
-      <category term="vscode" scheme="https://blog.re0gamer.com/tags/vscode/"/>
+      <category term="vscode" scheme="https://re0gamer.com/tags/vscode/"/>
     
-      <category term="vue" scheme="https://blog.re0gamer.com/tags/vue/"/>
+      <category term="vue" scheme="https://re0gamer.com/tags/vue/"/>
     
-      <category term="ts" scheme="https://blog.re0gamer.com/tags/ts/"/>
+      <category term="ts" scheme="https://re0gamer.com/tags/ts/"/>
     
-      <category term="prettier" scheme="https://blog.re0gamer.com/tags/prettier/"/>
+      <category term="prettier" scheme="https://re0gamer.com/tags/prettier/"/>
     
   </entry>
   
   <entry>
     <title>vscode常用插件</title>
-    <link href="https://blog.re0gamer.com/2018/05/14/vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
-    <id>https://blog.re0gamer.com/2018/05/14/vscode常用插件/</id>
+    <link href="https://re0gamer.com/2018/05/14/vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+    <id>https://re0gamer.com/2018/05/14/vscode常用插件/</id>
     <published>2018-05-14T06:26:11.000Z</published>
     <updated>2018-07-08T05:09:55.050Z</updated>
     
@@ -197,16 +197,16 @@
     </summary>
     
     
-      <category term="vscode" scheme="https://blog.re0gamer.com/tags/vscode/"/>
+      <category term="vscode" scheme="https://re0gamer.com/tags/vscode/"/>
     
-      <category term="vscode插件" scheme="https://blog.re0gamer.com/tags/vscode%E6%8F%92%E4%BB%B6/"/>
+      <category term="vscode插件" scheme="https://re0gamer.com/tags/vscode%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>react native小知识</title>
-    <link href="https://blog.re0gamer.com/2018/05/13/react-native%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
-    <id>https://blog.re0gamer.com/2018/05/13/react-native小知识/</id>
+    <link href="https://re0gamer.com/2018/05/13/react-native%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    <id>https://re0gamer.com/2018/05/13/react-native小知识/</id>
     <published>2018-05-13T12:38:54.000Z</published>
     <updated>2018-07-08T05:09:55.050Z</updated>
     
@@ -224,18 +224,18 @@
     </summary>
     
     
-      <category term="react-native" scheme="https://blog.re0gamer.com/tags/react-native/"/>
+      <category term="react-native" scheme="https://re0gamer.com/tags/react-native/"/>
     
-      <category term="react" scheme="https://blog.re0gamer.com/tags/react/"/>
+      <category term="react" scheme="https://re0gamer.com/tags/react/"/>
     
-      <category term="开发工具" scheme="https://blog.re0gamer.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="开发工具" scheme="https://re0gamer.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>前端推荐书籍</title>
-    <link href="https://blog.re0gamer.com/2018/05/13/%E5%89%8D%E7%AB%AF%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8D/"/>
-    <id>https://blog.re0gamer.com/2018/05/13/前端推荐书籍/</id>
+    <link href="https://re0gamer.com/2018/05/13/%E5%89%8D%E7%AB%AF%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8D/"/>
+    <id>https://re0gamer.com/2018/05/13/前端推荐书籍/</id>
     <published>2018-05-13T12:28:00.000Z</published>
     <updated>2018-07-08T05:09:55.051Z</updated>
     
@@ -256,7 +256,7 @@
     </summary>
     
     
-      <category term="书" scheme="https://blog.re0gamer.com/tags/%E4%B9%A6/"/>
+      <category term="书" scheme="https://re0gamer.com/tags/%E4%B9%A6/"/>
     
   </entry>
   
