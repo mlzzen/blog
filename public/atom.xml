@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2018-12-31T15:01:08.837Z</updated>
+  <updated>2019-01-01T15:23:30.397Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2019计划</title>
+    <link href="https://re0gamer.com/2019/01/01/2019%E8%AE%A1%E5%88%92/"/>
+    <id>https://re0gamer.com/2019/01/01/2019计划/</id>
+    <published>2019-01-01T15:19:02.000Z</published>
+    <updated>2019-01-01T15:23:30.397Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>把vuepress的那个主题做完</li><li>补强基础</li><li>存6万块钱</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;把vuepress的那个主题做完&lt;/li&gt;
+&lt;li&gt;补强基础&lt;/li&gt;
+&lt;li&gt;存6万块钱&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2018年总结</title>
     <link href="https://re0gamer.com/2018/12/31/2018%E5%B9%B4%E6%80%BB%E7%BB%93/"/>
     <id>https://re0gamer.com/2018/12/31/2018年总结/</id>
     <published>2018-12-31T14:07:26.000Z</published>
-    <updated>2018-12-31T15:01:08.837Z</updated>
+    <updated>2019-01-01T15:14:31.846Z</updated>
     
     <content type="html"><![CDATA[<p>一年又快结束了，回想这一年却并无太多成长。想做的几个小东西也因为后面觉得太过复杂而弃坑删了项目。</p><p>作为一个伪软粉，还是很喜欢 typescript 的，今年在更多的项目使用了 ts，尝试了一下 uwp，.net core，flutter。还尝试学习了一下 java web 相关的之类的。个人还是更喜欢 uwp 和 flutter，不过 uwp 看情形是很难火的了，flutter 势头还不错。</p><p>也在学习中思考了一下自己学习的的方向，是学习java web相关的还是学习更多客户端相关的。</p>]]></content>
     
@@ -43,7 +69,7 @@
     <link href="https://re0gamer.com/2018/08/17/%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%89%88powershell%EF%BC%8C%E6%8A%8APWSH-Admin%E6%B7%BB%E5%8A%A0%E8%BF%9Bshift%E5%8F%B3%E9%94%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E8%8F%9C%E5%8D%95%E9%87%8C/"/>
     <id>https://re0gamer.com/2018/08/17/安装最新版powershell，把PWSH-Admin添加进shift右键文件夹的菜单里/</id>
     <published>2018-08-17T12:27:31.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.856Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装最新版powershell"><a href="#安装最新版powershell" class="headerlink" title="安装最新版powershell"></a>安装最新版powershell</h2><p>微软把powershell开源了很久了，最新版要在github上面下载<br><a href="https://github.com/PowerShell/PowerShell/releases" target="_blank" rel="noopener">https://github.com/PowerShell/PowerShell/releases</a></p><h2 id="把以admin启动最新版powershell添加进注册表"><a href="#把以admin启动最新版powershell添加进注册表" class="headerlink" title="把以admin启动最新版powershell添加进注册表"></a>把以admin启动最新版powershell添加进注册表</h2><ol><li>win+R 输入regedit打开注册表。</li><li>来到路径 HKEY_CLASSES_ROOT\Directory\Background\shell 里面。</li><li>右键shell新建项，取名叫“PWSHAsAdmin”，名字随便取的。</li><li>给右侧的的（默认）赋值为“PWSH Admin”。</li><li>在右侧新建字符串Extended，类型为REG_SZ。</li><li>在右侧新建字符串HasLUAShield，类型为REG_SZ。</li><li>在右侧新建字符串Icon,类型为REG_SZ, 值为pwsh.exe。<br>如图所示：<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://wx4.sinaimg.cn/mw690/6dd11bf2gy1fucz2rs9r4j20m80blmy9.jpg" alt="图片描述" title="">                </div>                <div class="image-caption">图片描述</div>            </figure></li></ol><ol><li>右键点击“PWSHAsAdmin”,新建项“command”。</li><li>在右侧把默认值改为pwsh -windowstyle hidden -Command “Start-Process cmd -ArgumentList ‘/s,/k,pushd,%V &amp;&amp; start pwsh &amp;&amp; exit’ -Verb RunAs”<br>如图所示：<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://wx1.sinaimg.cn/mw690/6dd11bf2gy1fucz2v2657j20m80bl40l.jpg" alt="图片描述" title="">                </div>                <div class="image-caption">图片描述</div>            </figure></li></ol><h2 id="试试成果"><a href="#试试成果" class="headerlink" title="试试成果"></a>试试成果</h2><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://wx3.sinaimg.cn/mw690/6dd11bf2gy1fucxr9jameg20v70l648v.gif" alt="以管理员权限打开powershell" title="">                </div>                <div class="image-caption">以管理员权限打开powershell</div>            </figure>]]></content>
     
@@ -66,7 +92,7 @@
     <link href="https://re0gamer.com/2018/06/13/%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8eggjs-typescript-mysql/"/>
     <id>https://re0gamer.com/2018/06/13/尝试使用eggjs-typescript-mysql/</id>
     <published>2018-06-13T09:44:52.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.856Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装egg命令行工具"><a href="#安装egg命令行工具" class="headerlink" title="安装egg命令行工具"></a>安装egg命令行工具</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i egg-init -g</span><br></pre></td></tr></table></figure><h2 id="使用命令行工具新建项目"><a href="#使用命令行工具新建项目" class="headerlink" title="使用命令行工具新建项目"></a>使用命令行工具新建项目</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">egg-init 项目名称</span><br><span class="line">选择项目的类型为typescript</span><br></pre></td></tr></table></figure><h2 id="安装mysql的插件"><a href="#安装mysql的插件" class="headerlink" title="安装mysql的插件"></a>安装mysql的插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add egg-mysql</span><br></pre></td></tr></table></figure><h2 id="插件的配置"><a href="#插件的配置" class="headerlink" title="插件的配置"></a>插件的配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">// config/plugin.ts</span><br><span class="line">const plugin: EggPlugin = &#123;</span><br><span class="line">    static: true,</span><br><span class="line">    nunjucks: &#123;</span><br><span class="line">        enable: true,</span><br><span class="line">        package: &apos;egg-view-nunjucks&apos;</span><br><span class="line">    &#125;,</span><br><span class="line">    mysql: &#123;</span><br><span class="line">        enable: true,</span><br><span class="line">        package: &apos;egg-mysql&apos;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// config/config.local.ts</span><br><span class="line">export default () =&gt; &#123;</span><br><span class="line">    const config: DefaultConfig = &#123;</span><br><span class="line">        mysql: &#123;</span><br><span class="line">            // 单数据库信息配置</span><br><span class="line">            client: &#123;</span><br><span class="line">                // host</span><br><span class="line">                host: &apos;127.0.0.1&apos;,</span><br><span class="line">                // 端口号</span><br><span class="line">                port: &apos;3306&apos;,</span><br><span class="line">                // 用户名</span><br><span class="line">                user: &apos;creanme&apos;,</span><br><span class="line">                // 密码</span><br><span class="line">                password: &apos;pwd123&apos;,</span><br><span class="line">                // 数据库名</span><br><span class="line">                database: &apos;test&apos;</span><br><span class="line">            &#125;,</span><br><span class="line">            // 是否加载到 app 上，默认开启</span><br><span class="line">            app: true,</span><br><span class="line">            // 是否加载到 agent 上，默认关闭</span><br><span class="line">            agent: false</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return config</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2>]]></content>
     
@@ -95,7 +121,7 @@
     <link href="https://re0gamer.com/2018/06/08/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%9B%B4%E6%96%B0%E4%B8%8E%E8%84%9A%E6%9C%AC/"/>
     <id>https://re0gamer.com/2018/06/08/博客的更新与脚本/</id>
     <published>2018-06-07T16:27:31.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.856Z</updated>
     
     <content type="html"><![CDATA[<h2 id="使用creanme-github-io与hexo阶段"><a href="#使用creanme-github-io与hexo阶段" class="headerlink" title="使用creanme.github.io与hexo阶段"></a>使用creanme.github.io与hexo阶段</h2><p>由于github.io速度太慢，而且电脑重装过一次系统，以前写的博文都丢失了，只剩下github上生成的静态文件，.md文件都没了。</p><h2 id="把hexo生成的文件部署在国内服务器上"><a href="#把hexo生成的文件部署在国内服务器上" class="headerlink" title="把hexo生成的文件部署在国内服务器上"></a>把hexo生成的文件部署在国内服务器上</h2><p>之前买的vps都是国外的，访问速度太慢，不好用来搭建国内访问的网站，于是买了几年某良心云。</p><ol><li>首先在github上面建个仓库blog，hexo与master分支，hexo分支用来保存整个项目，方便以后本地电脑上的项目丢失了，直接clone下来就可以继续更新；master分支主要用来展示.md。</li><li>写博客就在本地上写，写完hexo g生成静态文件。然后把整个项目push到hexo分支，把source/_post文件夹里面的文件push到master。</li></ol><h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;update blog&quot;</span><br><span class="line">git push origin hexo</span><br><span class="line">cd .\source\_posts</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;update blog&quot;</span><br><span class="line">git push origin master</span><br><span class="line">ssh -i &quot;密钥文件绝对路径&quot; name@address &gt; /dev/null 2&gt;&amp;1 &lt;&lt; eeooff</span><br><span class="line">cd /var/www/blog</span><br><span class="line">git pull origin hexo</span><br><span class="line">echo done!</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -122,7 +148,7 @@
     <link href="https://re0gamer.com/2018/06/07/%E5%AD%90%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/"/>
     <id>https://re0gamer.com/2018/06/07/子域名配置/</id>
     <published>2018-06-07T15:12:48.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.856Z</updated>
     
     <content type="html"><![CDATA[<h2 id="域名管理处的配置"><a href="#域名管理处的配置" class="headerlink" title="域名管理处的配置"></a>域名管理处的配置</h2><p>我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dnspod.net f1g1ns2.dnspod.net。然后在dnspod 添加了*domain.com 泛域名解析，然后要等一会儿，毕竟namesilo是国外的域名商，我开始以为没有作用，然后反复试各种方法，浪费了很多时间。</p><h2 id="nginx-的配置"><a href="#nginx-的配置" class="headerlink" title="nginx 的配置"></a>nginx 的配置</h2><pre><code>server{    listen 80;    server_name  riyue.me;    if ($scheme != &quot;https&quot;) {        return 301 https://$host$request_uri;    }    root   /var/www/riyue;    index  index.php index.html index.htm;    location ~ \.php$ {        include /etc/nginx/fastcgi_params;        fastcgi_pass 127.0.0.1:9000;        fastcgi_index index.php;    }}server{    listen 80;    server_name  blog.riyue.me;    # if ($scheme != &quot;https&quot;) {    #     return 301 https://$host$request_uri;    # }    root   /var/www/blog/public;    index  index.php index.html index.htm;    location ~ \.php$ {        include /etc/nginx/fastcgi_params;        fastcgi_pass 127.0.0.1:9000;        fastcgi_index index.php;    }}</code></pre><h2 id="重启nginx"><a href="#重启nginx" class="headerlink" title="重启nginx"></a>重启nginx</h2><pre><code>nginx -s reload</code></pre>]]></content>
     
@@ -149,7 +175,7 @@
     <link href="https://re0gamer.com/2018/06/06/letsencrypt%E7%9A%84%E5%85%8D%E8%B4%B9https%E8%AF%81%E4%B9%A6%E7%94%B3%E8%AF%B7%E4%B8%8Enginx%E9%83%A8%E7%BD%B2/"/>
     <id>https://re0gamer.com/2018/06/06/letsencrypt的免费https证书申请与nginx部署/</id>
     <published>2018-06-06T10:44:52.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.846Z</updated>
     
     <content type="html"><![CDATA[<h2 id="使用certbot获取证书"><a href="#使用certbot获取证书" class="headerlink" title="使用certbot获取证书"></a>使用certbot获取证书</h2><ul><li>第一步 选择好使用的软件和系统，然后页面就自动滚动到了相应处。</li><li><p>第二步 使用下面命令安装相关工具。</p>  <pre>yum -y install yum-utils</pre>  <pre>yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional</pre></li><li><p>第三步 安装python-cert-nginx </p>  <pre>$ sudo yum install python2-certbot-nginx</pre></li><li>第四步 使用命令，获得证书  <pre>$ sudo certbot --nginx</pre></li><li><p>第五步 打开nginx.conf 添加</p>  <pre>  server {      listen 443 ssl;      server_name blog.riyue.me;      ssl_certificate /etc/letsencrypt/live/riyue.me/fullchain.pem;      ssl_certificate_key /etc/letsencrypt/live/riyue.me/privkey.pem;      ssl_protocols TLSv1 TLSv1.1 TLSv1.2;      ssl_prefer_server_ciphers on;      ssl_dhparam /etc/ssl/certs/dhparam.pem;      ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';      ssl_session_timeout 1d;      ssl_session_cache shared:SSL:50m;      ssl_stapling on;      ssl_stapling_verify on;      add_header Strict-Transport-Security max-age=15768000;      # The rest of your server block      root /var/www/blog/public;      index index.html index.htm;      location / {              try_files $uri $uri/ =404;      }  }  </pre></li><li><p>第六步 重启nginx</p></li></ul>]]></content>
     
@@ -175,7 +201,7 @@
     <link href="https://re0gamer.com/2018/05/24/vscode-vue-ts%E9%A1%B9%E7%9B%AE-prettier%E9%85%8D%E7%BD%AE/"/>
     <id>https://re0gamer.com/2018/05/24/vscode-vue-ts项目-prettier配置/</id>
     <published>2018-05-24T15:17:37.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.846Z</updated>
     
     <content type="html"><![CDATA[<h2 id="必装插件-Prettier-Code-formatter"><a href="#必装插件-Prettier-Code-formatter" class="headerlink" title="必装插件 Prettier - Code formatter"></a>必装插件 Prettier - Code formatter</h2><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="typescript-需要tslint和tslint-config-prettier"><a href="#typescript-需要tslint和tslint-config-prettier" class="headerlink" title="typescript 需要tslint和tslint-config-prettier"></a>typescript 需要tslint和tslint-config-prettier</h3><pre><code>yarn add -D tslint tslint-config-prettier</code></pre><p>根目录添加tslint.json</p><pre><code>{    &quot;defaultSeverity&quot;: &quot;warning&quot;,    &quot;extend&quot;: [&quot;tslint:recommended&quot;, &quot;tslint-config-prettier&quot;],    &quot;linterOptions&quot;: {        &quot;exclude&quot;: [&quot;node_modules/**&quot;]    },    &quot;rules&quot;: {        &quot;quotemark&quot;: [true, &quot;single&quot;],        &quot;indent&quot;: [true, &quot;spaces&quot;, 4],        &quot;interface-name&quot;: false,        &quot;ordered-imports&quot;: false,        &quot;object-literal-sort-keys&quot;: false,        &quot;no-consecutive-blank-lines&quot;: false    }}</code></pre><h3 id="样式部分需要stylint和prettier-stylelint"><a href="#样式部分需要stylint和prettier-stylelint" class="headerlink" title="样式部分需要stylint和prettier-stylelint"></a>样式部分需要stylint和prettier-stylelint</h3><pre><code>yarn add -D stylelint prettier-stylelint stylelint-config-ydj</code></pre><p>根目录添加.stylelintrc.js</p><pre><code>module.exports = {    extends: [        &apos;stylelint-config-ydj/scss&apos;, // your stylint config        &apos;./node_modules/prettier-stylelint/config.js&apos;    ],    rules: {        &apos;string-quotes&apos;: &apos;double&apos;    }};</code></pre><h3 id="prettier配置，在根目录添加-prettierrc"><a href="#prettier配置，在根目录添加-prettierrc" class="headerlink" title="prettier配置，在根目录添加.prettierrc"></a>prettier配置，在根目录添加.prettierrc</h3><pre><code>{    &quot;eslintIntegration&quot;: true,    &quot;stylelintIntegration&quot;: true,    &quot;tabWidth&quot;: 4,    &quot;singleQuote&quot;: true,    &quot;semi&quot;: false}</code></pre><p>编辑器配置里面需要加入</p><pre><code>// vetur configuration&quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;,// prettier configuration&quot;prettier.disableLanguages&quot;: [    &quot;vue&quot;],</code></pre><p>参考<a href="https://juejin.im/post/5a791d566fb9a0634853400e" target="_blank" rel="noopener">YDJFE的文章</a></p>]]></content>
     
@@ -204,7 +230,7 @@
     <link href="https://re0gamer.com/2018/05/14/vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
     <id>https://re0gamer.com/2018/05/14/vscode常用插件/</id>
     <published>2018-05-14T06:26:11.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.846Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-auto-import"><a href="#1-auto-import" class="headerlink" title="1.auto import"></a>1.auto import</h2><pre><code>在引用某些模块后会提示你引用某个包</code></pre><h2 id="2-babel-es6-es7"><a href="#2-babel-es6-es7" class="headerlink" title="2.babel es6/es7"></a>2.babel es6/es7</h2><pre><code>babel的es6/es7增强</code></pre><h2 id="3-beautify"><a href="#3-beautify" class="headerlink" title="3.beautify"></a>3.beautify</h2><pre><code>非常好用，的一款格式化代码的插件，能格式化许多种代码。</code></pre><h2 id="4-change-case"><a href="#4-change-case" class="headerlink" title="4.change-case"></a>4.change-case</h2><pre><code>一键转换大小驼峰的风格</code></pre><h2 id="5-debugger-for-chrome"><a href="#5-debugger-for-chrome" class="headerlink" title="5.debugger for chrome"></a>5.debugger for chrome</h2><pre><code>用于在chrome上面的debug</code></pre><h2 id="6-document-this"><a href="#6-document-this" class="headerlink" title="6.document this"></a>6.document this</h2><pre><code>主要用于代码的批注，后期文档的生成。</code></pre><h2 id="7-easy-less"><a href="#7-easy-less" class="headerlink" title="7.easy less"></a>7.easy less</h2><pre><code>自动把less编译为css</code></pre><h2 id="8-eslint"><a href="#8-eslint" class="headerlink" title="8.eslint"></a>8.eslint</h2><pre><code>JavaScript和JSX检查工具</code></pre><h2 id="9-git-history"><a href="#9-git-history" class="headerlink" title="9.git history"></a>9.git history</h2><pre><code>增强了vscode的git功能</code></pre><h2 id="10-go"><a href="#10-go" class="headerlink" title="10.go"></a>10.go</h2><pre><code>微软官方出的go语言的插件</code></pre><h2 id="11-html-css-support"><a href="#11-html-css-support" class="headerlink" title="11.html css support"></a>11.html css support</h2><pre><code>html里面的class提示</code></pre><h2 id="12-html-snippets"><a href="#12-html-snippets" class="headerlink" title="12.html snippets"></a>12.html snippets</h2><pre><code>html的代码补全</code></pre><h2 id="13-javascript-es6-code-snippets"><a href="#13-javascript-es6-code-snippets" class="headerlink" title="13.javascript(es6) code snippets"></a>13.javascript(es6) code snippets</h2><pre><code>es6代码提示</code></pre><h2 id="14-node-debug"><a href="#14-node-debug" class="headerlink" title="14.node debug"></a>14.node debug</h2><pre><code>提示node.js代码</code></pre><h2 id="15-one-dark-pro"><a href="#15-one-dark-pro" class="headerlink" title="15.one dark pro"></a>15.one dark pro</h2><pre><code>热门的主题</code></pre><h2 id="16-open-in-browser"><a href="#16-open-in-browser" class="headerlink" title="16.open in browser"></a>16.open in browser</h2><pre><code>直接在浏览器里面打开</code></pre><h2 id="17-output-colorizer"><a href="#17-output-colorizer" class="headerlink" title="17.output colorizer"></a>17.output colorizer</h2><pre><code>output，debug,extensions增强</code></pre><h2 id="18-path-autocomplete"><a href="#18-path-autocomplete" class="headerlink" title="18.path autocomplete"></a>18.path autocomplete</h2><pre><code>路径提示</code></pre><h2 id="19-react-beautify"><a href="#19-react-beautify" class="headerlink" title="19.react-beautify"></a>19.react-beautify</h2><pre><code>react代码格式化</code></pre><h2 id="20-react-native-react"><a href="#20-react-native-react" class="headerlink" title="20.react-native/react"></a>20.react-native/react</h2><pre><code>react react-native代码的提示</code></pre><h2 id="21-reactjs-code-snippets"><a href="#21-reactjs-code-snippets" class="headerlink" title="21.reactjs code snippets"></a>21.reactjs code snippets</h2><pre><code>react 代码提示</code></pre><h2 id="22-TODO-Hightlight"><a href="#22-TODO-Hightlight" class="headerlink" title="22.TODO Hightlight"></a>22.TODO Hightlight</h2><pre><code>高亮todo</code></pre><h2 id="23-TSLint"><a href="#23-TSLint" class="headerlink" title="23.TSLint"></a>23.TSLint</h2><pre><code>ts代码检查工具</code></pre><h2 id="24-vetur"><a href="#24-vetur" class="headerlink" title="24.vetur"></a>24.vetur</h2><pre><code>vue代码提示，检测，格式化工具。</code></pre><h2 id="25-vscode-icons"><a href="#25-vscode-icons" class="headerlink" title="25.vscode-icons"></a>25.vscode-icons</h2><pre><code>文件图标</code></pre>]]></content>
     
@@ -230,7 +256,7 @@
     <link href="https://re0gamer.com/2018/05/13/react-native%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     <id>https://re0gamer.com/2018/05/13/react-native小知识/</id>
     <published>2018-05-13T12:38:54.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.846Z</updated>
     
     <content type="html"><![CDATA[<ol><li>执行react-native run-android命令后，开始下载gradle文件，速度非常慢。<br> <pre>解决办法：<pre><code>1. 手动使用迅雷下载，迅雷下载好后，把文件放入到一个文件夹中，最好路径不带中文。2. 修改 项目名\android\gradle\wrapper 下的gradle-wrapper.properties，把下 载的地址改为自己已经下好的地址。distributionUrl=file\:///D:/gradle-2.14.1-all.zip  冒号要用\转</code></pre></pre></li><li>执行react-native run-android命令后，使用的vs的模拟器，连接不上模拟器。<br> <pre>解决办法： 参考的 <a href="http://www.cnblogs.com/tianma3798/p/5911395.html" target="_blank" rel="noopener">http://www.cnblogs.com/tianma3798/p/5911395.html</a><pre><code>1. 打开模拟器的“工具”菜单。2. 选项卡切换到Network。3. 使用命令adb connect 169.254.138.177:5555就连接上了。4. 重新运行命令react-native run-android。</code></pre></pre></li></ol>]]></content>
     
@@ -259,7 +285,7 @@
     <link href="https://re0gamer.com/2018/05/13/%E5%89%8D%E7%AB%AF%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8D/"/>
     <id>https://re0gamer.com/2018/05/13/前端推荐书籍/</id>
     <published>2018-05-13T12:28:00.000Z</published>
-    <updated>2018-12-31T13:36:37.700Z</updated>
+    <updated>2019-01-01T15:14:31.846Z</updated>
     
     <content type="html"><![CDATA[<ol><li>《JavaScript权威指南（第六版）》</li><li>《JavaScript高级程序设计》</li><li>《JavaScript DOM编程艺术》</li><li>《JavaScript编程精解》</li><li>《JQuery权威指南》</li><li>《编写可维护的JavaScript》</li><li>《JavaScript异步编程》</li><li>《高性能JavaScript》</li></ol>]]></content>
     
