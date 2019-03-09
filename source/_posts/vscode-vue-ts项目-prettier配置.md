@@ -8,25 +8,29 @@ tags: [vscode, vue, ts, prettier]
 ## 配置
 ### typescript 需要tslint和tslint-config-prettier
 
-    yarn add -D tslint tslint-config-prettier
+```
+yarn add -D tslint tslint-config-prettier
+```
 
 根目录添加tslint.json
 
-    {
-        "defaultSeverity": "warning",
-        "extend": ["tslint:recommended", "tslint-config-prettier"],
-        "linterOptions": {
-            "exclude": ["node_modules/**"]
-        },
-        "rules": {
-            "quotemark": [true, "single"],
-            "indent": [true, "spaces", 4],
-            "interface-name": false,
-            "ordered-imports": false,
-            "object-literal-sort-keys": false,
-            "no-consecutive-blank-lines": false
-        }
+```
+{
+    "defaultSeverity": "warning",
+    "extend": ["tslint:recommended", "tslint-config-prettier"],
+    "linterOptions": {
+        "exclude": ["node_modules/**"]
+    },
+    "rules": {
+        "quotemark": [true, "single"],
+        "indent": [true, "spaces", 4],
+        "interface-name": false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "no-consecutive-blank-lines": false
     }
+}
+```
 
 
 ### 样式部分需要stylint和prettier-stylelint
@@ -35,15 +39,17 @@ tags: [vscode, vue, ts, prettier]
 
 根目录添加.stylelintrc.js
 
-    module.exports = {
-        extends: [
-            'stylelint-config-ydj/scss', // your stylint config
-            './node_modules/prettier-stylelint/config.js'
-        ],
-        rules: {
-            'string-quotes': 'double'
-        }
-    };
+```
+module.exports = {
+    extends: [
+        'stylelint-config-ydj/scss', // your stylint config
+        './node_modules/prettier-stylelint/config.js'
+    ],
+    rules: {
+        'string-quotes': 'double'
+    }
+};
+```
 
 ### prettier配置，在根目录添加.prettierrc
 
@@ -57,6 +63,7 @@ tags: [vscode, vue, ts, prettier]
 
 编辑器配置里面需要加入
 
+```
     // vetur configuration
     "vetur.format.defaultFormatter.html": "js-beautify-html",
 
@@ -64,9 +71,7 @@ tags: [vscode, vue, ts, prettier]
     "prettier.disableLanguages": [
         "vue"
     ],
-
-    
-参考[YDJFE的文章](https://juejin.im/post/5a791d566fb9a0634853400e)
+```
 
 
 

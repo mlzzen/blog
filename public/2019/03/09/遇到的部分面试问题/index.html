@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>遇到的部分面试问题 | 阿良良的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="说说es6新增内容   扩展运算符扩展数组与对象   箭头函数与bind有何不同 node跨域的方法   自适应不同分辨率   前端优化   link与import不同  link属于XHTML标签，而@import是css提供的一种方式。 link标签除了可以加载css外，还可以做很多其他的事情，比如定义RSS，定义rel连接属性等，而             @import只能加载css。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="遇到的部分面试问题">
+<meta property="og:url" content="https://re0gamer.com/2019/03/09/遇到的部分面试问题/index.html">
+<meta property="og:site_name" content="阿良良的博客">
+<meta property="og:description" content="说说es6新增内容   扩展运算符扩展数组与对象   箭头函数与bind有何不同 node跨域的方法   自适应不同分辨率   前端优化   link与import不同  link属于XHTML标签，而@import是css提供的一种方式。 link标签除了可以加载css外，还可以做很多其他的事情，比如定义RSS，定义rel连接属性等，而             @import只能加载css。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-03-09T15:29:12.382Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="遇到的部分面试问题">
+<meta name="twitter:description" content="说说es6新增内容   扩展运算符扩展数组与对象   箭头函数与bind有何不同 node跨域的方法   自适应不同分辨率   前端优化   link与import不同  link属于XHTML标签，而@import是css提供的一种方式。 link标签除了可以加载css外，还可以做很多其他的事情，比如定义RSS，定义rel连接属性等，而             @import只能加载css。">
+    
+        <link rel="alternate" type="application/atom+xml" title="阿良良的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://wx4.sinaimg.cn/mw690/6dd11bf2ly8frsisq6g6dj20k00k0wts.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Creanme</h5>
+          <a href="mailto:creanme@live.com" title="creanme@live.com" class="mail">creanme@live.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/creanme" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">遇到的部分面试问题</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">遇到的部分面试问题</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-03-09T15:28:22.000Z" itemprop="datePublished" class="page-time">
+  2019-03-09
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-遇到的部分面试问题"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">遇到的部分面试问题</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-03-09 23:28:22" datetime="2019-03-09T15:28:22.000Z"  itemprop="datePublished">2019-03-09</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <ul>
+<li>说说es6新增内容  </li>
+<li>扩展运算符扩展数组与对象  </li>
+<li>箭头函数与bind有何不同</li>
+<li>node跨域的方法  </li>
+<li>自适应不同分辨率  </li>
+<li>前端优化  <ul>
+<li>link与import不同 <ul>
+<li>link属于XHTML标签，而@import是css提供的一种方式。</li>
+<li>link标签除了可以加载css外，还可以做很多其他的事情，比如定义RSS，定义rel连接属性等，而             @import只能加载css。</li>
+<li>加载顺序也不同。当一个页面被加载的时候，link引用的css会同时被加载，而@import引用的css        会等到页面全部被下载完再加载。</li>
+<li>兼容性的差别。@import ie5以上才能被支持。</li>
+<li>使用dom控制样式时的差别。link标签可用dom控制，@import不可。</li>
+<li>@import可以在css中再次引入其他样式表，这样做有个缺点，会对服务器产生过多http请求。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>vue与react有何不同</li>
+<li>react性能优于vue</li>
+<li>vue用的模板，react用的jsx。</li>
+<li>react是在js里面写css</li>
+<li>闭包，可能产生的问题以及解决方案</li>
+<li>vue组件通信</li>
+<li>不同大小设备适配</li>
+<li>基础类型与引用类型有哪些</li>
+<li>cookie与localstorage有什么区别</li>
+<li>上下左右居中</li>
+<li>h5 ‘cover’了解多少</li>
+<li>transform与transition有什么区别</li>
+<li>用transform写旋转怎么写</li>
+<li>上传文件如何不刷新页面，ajax能上传文件吗？</li>
+<li>如何做多人聊天，不使用websocket如何做实现长连接，使用定时器做长连接有什么问题（不考虑服务器资源方面）。</li>
+<li>h5中有什么能用于上传的新东西<ul>
+<li>XMLHttpRequest对象的第二版，从此ajax能够上传文件了，主要用的是FormData对象</li>
+<li>XMLHttpRequest第二版还定义了一个progress事件，可以用来制作进度条。</li>
+<li>如果上传的是图片文件，利用File API可以做一个图片预览，主要用到FileReader对象。</li>
+</ul>
+</li>
+<li>有哪些新建对象的方式。</li>
+<li>父子组件通信，非父子组件通信。</li>
+<li>Vue-router事件</li>
+<li>http状态码</li>
+<li>vuex的action和mutation有什么不同</li>
+<li>Vue router登录验证</li>
+<li>异步组件</li>
+<li>ios，android有哪些兼容q问题</li>
+<li>开发过哪些插件</li>
+<li>overflow hidden 去塌陷原理<ul>
+<li>如果没有明确设定容器高情况下，它要计算内容全部高度才能确定在什么位置hidden，浮动的高度就要被计算进去，顺带达成了清理浮动的目标。独立的块级上下文可以包裹浮动流，全部浮动子元素也不会引起容器高度塌陷，也就是说包含块会把浮动元素的高度也计算在内，所以不用清除浮动来撑起高度。</li>
+</ul>
+</li>
+<li>哪个期间能访问到vue实例里面的data<ul>
+<li>创建后与销毁前</li>
+</ul>
+</li>
+<li>computed与watch应用场景，与不同<ul>
+<li>computed有缓存，依赖项的值没变化时，结果调用不会变化</li>
+<li>computed是计算属性，用起来就像data一样，watch是监听机制+事件机制，监听项发生变化的时候，然后执行对应事件的方法。</li>
+<li>watch擅长处理的场景：一个数据影响多个数据；computed擅长处理的场景：一个数据受多个数据影响。</li>
+</ul>
+</li>
+<li>get请求如何将#3发送到后台<ul>
+<li>url转码，#转为%23</li>
+</ul>
+</li>
+<li>jquery on,bind，delegate，live不同<ul>
+<li>Live与delegate非常相似，实际上live内部使用的delegate来实现的，它们都监听事件的冒泡。delegate性能更高。</li>
+<li>新版本bind，delegate，live底层都是用on实现的。</li>
+</ul>
+</li>
+<li>get post不同</li>
+<li>get产生一个TCP数据包，post产生两个TCP数据包<ul>
+<li>get会把header和data一并发送出去，服务器响应200；而post浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200。</li>
+<li>get参数受限于url长度，具体数值取决于浏览器和服务器的限制，而post无限制。</li>
+</ul>
+</li>
+<li>浏览器内核<ul>
+<li>Trident –IE</li>
+<li>Gecko – Firefox</li>
+<li>Webkit – Safari</li>
+<li>Chromium – Chrome</li>
+<li>Presto – Opera</li>
+</ul>
+</li>
+<li>json在堆栈里面的存储<ul>
+<li>基本类型存在栈上面的</li>
+<li>引用类型存的值存在堆上面的，栈上面有引用地址</li>
+</ul>
+</li>
+<li>Jquery的eq()</li>
+<li>Vue生命周期created和mounted的区别</li>
+<li>闭包</li>
+<li>数组，里面是对象，存的类似name,id等字段，如果根据价格排序。<br>​     ​        dt- sort((a, b) =&gt; {<br>​     ​            return - price &gt; - price ? 1 : -1<br>​     ​        })</li>
+<li>es6的新增的数组的方法。<ul>
+<li>Array的内置方法<ul>
+<li>From</li>
+<li>Of</li>
+</ul>
+</li>
+<li>实例的内置方法<ul>
+<li>copyWithin</li>
+<li>find和findIndex</li>
+<li>Fill</li>
+<li>Entries,keys,values</li>
+<li>Includes</li>
+<li>Flat,flatMap</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>数组的sum()方法（数组没有sum方法，所以这问题是错误的）</li>
+<li>axios与ajax的区别（估计问的是jquery的ajax和axios的区别）<ul>
+<li>从 nod- js 创建 http 请求</li>
+<li>支持 Promise API</li>
+<li>客户端支持防止CSRF</li>
+<li>提供了一些并发请求的接口</li>
+</ul>
+</li>
+<li>tcp的实现<ul>
+<li>首先，采用三次握手来建立TCP连接，四次握手来释放TCP连接，从而保证建立的传输信道是可靠的。</li>
+<li>其次，TCP采用了连续ARQ协议（回退N，Go-back-N；超时自动重传）来保证数据传输的正确性，使用滑动窗口协议来保证接方能够及时处理所接收到的数据，进行流量控制。</li>
+<li>最后，TCP使用慢开始、拥塞避免、快重传和快恢复来进行拥塞控制，避免网络拥塞。</li>
+</ul>
+</li>
+<li>vue与jquery的有什么不同<ul>
+<li>jQuery是使用选择器（$）选取DOM对象，对其进行赋值、取值、事件绑定等操作，其实和原生的HTML的区别只在于可以更方便的选取和操作DOM对象，而数据和界面是在一起的。比如需要获取label标签的内容：$(“lable”).val();,它还是依赖DOM元素的值。 </li>
+<li>Vue则是通过Vue对象将数据和View完全分离开来了。对数据进行操作不再需要引用相应的DOM对象，可以说数据和View是分离的，他们通过Vue对象这个vm实现相互的绑定。这就是传说中的MVVM。</li>
+<li>vue适用的场景：复杂数据操作的后台页面，表单填写页面</li>
+<li>jquery适用的场景：比如说一些html5的动画页面，一些需要js来操作页面样式的页面</li>
+</ul>
+</li>
+<li>面向对象与面向过程的区别<ul>
+<li>面向过程就是分析出解决问题所需要的步骤，然后用函数把这些步骤一步一步实现，使用的时候一个一个依次调用就可以了。</li>
+<li>面向对象是把构成问题事务分解成各个对象，建立对象的目的不是为了完成一个步骤，而是为了描叙某个事物在整个解决问题的步骤中的行为。</li>
+</ul>
+</li>
+<li>TCP与UDP的区别<ul>
+<li>TCP(传输控制协议 Transmission Control Protocol)<ul>
+<li>提供IP环境下的数据可靠传输(一台计算机发出的字节流会无差错的发往网络上的其他计算机，而且计算机A接收数据包的时候，也会向计算机B回发数据包，这也会产生部分通信量)，有效流控，全双工操作(数据在两个方向上能同时传递)，多路复用服务，是面向连接，端到端的传输;</li>
+<li>面向连接：正式通信前必须要与对方建立连接。事先为所发送的数据开辟出连接好的通道，然后再进行数据发送，像打电话。</li>
+<li>TCP支持的应用协议：Telnet(远程登录)、FTP(文件传输协议)、SMTP(简单邮件传输协议)。TCP用于传输数据量大，可靠性要求高的应用。</li>
+<li>UDP(用户数据报协议，User Data Protocol)<ul>
+<li>面向非连接的(正式通信前不必与对方建立连接，不管对方状态就直接发送，像短信，QQ)，不能提供可靠性、流控、差错恢复功能。UDP用于一次只传送少量数据，可靠性要求低、传输经济等应用。</li>
+<li>UDP支持的应用协议：NFS(网络文件系统)、SNMP(简单网络管理系统)、DNS(主域名称系统)、TFTP(通用文件传输协议)等。</li>
+</ul>
+</li>
+<li>TCP：面向连接、传输可靠(保证数据正确性,保证数据顺序)、用于传输大量数据(流模式)、速度慢，建立连接需要开销较多(时间，系统资源)。</li>
+<li>UDP：面向非连接、传输不可靠、用于传输少量数据(数据包模式)、速度快。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>设计模式有哪些<ul>
+<li>工厂模式——工厂模式是为了解决多个类似对象声明的问题;也就是为了解决实列化对象产生重复的问题。<ul>
+<li>优点：能解决多个相似的问题。</li>
+<li>缺点：不能知道对象识别的问题(对象的类型不知道)。</li>
+</ul>
+</li>
+<li>单体模式——单体模式是一个用来划分命名空间并将一批属性和方法组织在一起的对象，如果它可以被实例化，那么它只能被实例化一次。<ul>
+<li>可以用来划分命名空间，减少全局变量的数量。</li>
+<li>使用单体模式可以使代码组织的更为一致，使代码容易阅读和维护。</li>
+<li>可以被实例化，且实例化一次。</li>
+</ul>
+</li>
+<li>模块模式</li>
+<li>代理模式</li>
+<li>职责链模式</li>
+<li>命令模式</li>
+<li>模板方法模式</li>
+<li>策略模式</li>
+<li>发布订阅模式</li>
+<li>中介者模式<br>​      ​    ​       ​            ​    </li>
+</ul>
+</li>
+<li>工厂模式有哪些好处</li>
+<li>能解决多个相似的问题。</li>
+<li>vue.use()原理   </li>
+<li>require 与import区别</li>
+<li>防抖动</li>
+<li>prototype继承原理<ul>
+<li>实例.__proto===构造函数.prototype</li>
+<li>查找实例的属性时，先判断自身有没有这个属性，如果有，那么直接获取；</li>
+<li>否则，查找它的<strong>proto</strong>有没有这个属性，如果有，就是它；</li>
+<li>否则，查找它的<strong>proto</strong>.<strong>proto</strong>有没有这个属性…</li>
+<li>如果一直找不到，就是undefined。</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <footer>
+        <a href="https://re0gamer.com">
+            <img src="https://wx4.sinaimg.cn/mw690/6dd11bf2ly8frsisq6g6dj20k00k0wts.jpg" alt="Creanme">
+            Creanme
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/03/08/深夜排查小飞机故障/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">深夜排查小飞机故障</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Creanme &copy; 2015 - 2019</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备18016722号-1</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+<!-- 
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+ -->
+
+
+
+
+</body>
+</html>
