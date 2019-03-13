@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2019-03-09T15:29:12.382Z</updated>
+  <updated>2019-03-13T13:19:09.172Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10系统UWP应用自启动设置</title>
+    <link href="https://re0gamer.com/2019/03/13/win10%E7%B3%BB%E7%BB%9FUWP%E5%BA%94%E7%94%A8%E8%87%AA%E5%90%AF%E5%8A%A8%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://re0gamer.com/2019/03/13/win10系统UWP应用自启动设置/</id>
+    <published>2019-03-13T13:18:41.000Z</published>
+    <updated>2019-03-13T13:19:09.172Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>win+R输入“shell:appsfolder”</li><li>找到“邮件”这个应用</li><li>右键“邮件”并创建快捷方式，会提示无法在当前目录创建，会创建到桌面</li><li>win+E打开资源管理器进入到“C:\Users\用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup”</li><li>把桌面的快捷方式放入到“启动”这个目录</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;win+R输入“shell:appsfolder”&lt;/li&gt;
+&lt;li&gt;找到“邮件”这个应用&lt;/li&gt;
+&lt;li&gt;右键“邮件”并创建快捷方式，会提示无法在当前目录创建，会创建到桌面&lt;/li&gt;
+&lt;li&gt;win+E打开资源管理器进入到“C:\Users\用户名\AppD
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>遇到的部分面试问题</title>
