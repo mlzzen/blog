@@ -1,7 +1,7 @@
 ---
 title: win10系统UWP应用自启动设置
 date: 2019-03-13 21:18:41
-tags:
+tags: [win10, 自启动, UWP]
 ---
 1. win+R输入“shell:appsfolder”
 2. 找到“邮件”这个应用
