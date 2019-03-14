@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2019-03-13T13:21:24.455Z</updated>
+  <updated>2019-03-14T14:07:57.304Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GET与POST的区别</title>
+    <link href="https://re0gamer.com/2019/03/14/GET%E4%B8%8EPOST%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://re0gamer.com/2019/03/14/GET与POST的区别/</id>
+    <published>2019-03-14T14:07:40.000Z</published>
+    <updated>2019-03-14T14:07:57.304Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>分类</th><th>GET</th><th>POST</th></tr></thead><tbody><tr><td>后退按钮/刷新</td><td>无害</td><td>数据会被重新提交</td></tr><tr><td>书签</td><td>可收藏为书签</td><td>不可收藏为书签</td></tr><tr><td>缓存</td><td>能被缓存</td><td>不能被缓存</td></tr><tr><td>编码类型</td><td>application/x-www-form-urlencoded</td><td>application/x-www-form-urlencoded或multipart/form-data。为二进制数据使用多重编码</td></tr><tr><td>历史</td><td>参数保留在浏览器中</td><td>c参数不会保留在浏览器历史中</td></tr><tr><td>对数据长度的限制</td><td>当发送数据时，GET方法向URL添加数据；URL的长度是受限的，2048个字符。</td><td>无限制</td></tr><tr><td>对数据类型的限制</td><td>只允许ASCII字符</td><td>没有限制。也允许二进制数据。</td></tr><tr><td>安全性</td><td>与POST相比，GET的安全性较差，因为发送的数据是URL的一部分。在发送密码或其他敏感信息时绝不要使用GET</td><td>POST比GET更安全，因为参数不会被保存在浏览器历史或web服务器日志中</td></tr><tr><td>可见性</td><td>数据在URL中对所有人都是可见的</td><td>u数据不会显示在URL中</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;分类&lt;/th&gt;
+&lt;th&gt;GET&lt;/th&gt;
+&lt;th&gt;POST&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;后退按钮/刷新&lt;/td&gt;
+&lt;td&gt;无害&lt;/td&gt;
+&lt;td&gt;数据会被重新提交&lt;/td&gt;
+&lt;/tr&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>win10系统UWP应用自启动设置</title>
