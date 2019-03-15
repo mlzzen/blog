@@ -14,23 +14,24 @@
     
     
     
-    <title>Archives: 2019/3 | 阿良良的博客</title>
+    <title>new和字面量的区别 | 阿良良的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿良良的博客">
-<meta property="og:url" content="https://re0gamer.com/archives/2019/03/index.html">
+    <meta name="description" content="在调用new的过程会发生4件事情：  新生成一个对象 链接到原型 绑定this 返回新对象  试着自己实现一个new 1234567function create() &amp;#123;    let obj = &amp;#123;&amp;#125;;    let Con = [].shift.call(arguments);    obj.__proto__ = Con.apply(obj, arguments">
+<meta property="og:type" content="article">
+<meta property="og:title" content="new和字面量的区别">
+<meta property="og:url" content="https://re0gamer.com/2019/03/15/new和字面量的区别/index.html">
 <meta property="og:site_name" content="阿良良的博客">
-<meta property="og:description" content="博客">
+<meta property="og:description" content="在调用new的过程会发生4件事情：  新生成一个对象 链接到原型 绑定this 返回新对象  试着自己实现一个new 1234567function create() &amp;#123;    let obj = &amp;#123;&amp;#125;;    let Con = [].shift.call(arguments);    obj.__proto__ = Con.apply(obj, arguments">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-15T13:50:40.679Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿良良的博客">
-<meta name="twitter:description" content="博客">
+<meta name="twitter:title" content="new和字面量的区别">
+<meta name="twitter:description" content="在调用new的过程会发生4件事情：  新生成一个对象 链接到原型 绑定this 返回新对象  试着自己实现一个new 1234567function create() &amp;#123;    let obj = &amp;#123;&amp;#125;;    let Con = [].shift.call(arguments);    obj.__proto__ = Con.apply(obj, arguments">
     
         <link rel="alternate" type="application/atom+xml" title="阿良良的博客" href="/atom.xml">
     
@@ -46,7 +47,7 @@
 <body>
     <div id="loading" class="active"></div>
 
-    <aside id="menu"  >
+    <aside id="menu" class="hide" >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -72,7 +73,7 @@
               </a>
             </li>
         
-            <li class="waves-block waves-effect active">
+            <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 Archives
@@ -118,7 +119,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Archives</div>
+        <div class="flex-col header-title ellipsis">new和字面量的区别</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -133,11 +134,17 @@
         
     </div>
 </header>
-<header class="content-header archives-header">
+<header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Archives</h1>
+        <h1 class="title">new和字面量的区别</h1>
         <h5 class="subtitle">
+            
+                <time datetime="2019-03-15T13:48:48.000Z" itemprop="datePublished" class="page-time">
+  2019-03-15
+</time>
+
+
             
         </h5>
     </div>
@@ -147,171 +154,104 @@
 
 </header>
 
-<div class="container body-wrap fade">
+
+<div class="container body-wrap">
     
 
-    
+<article id="post-new和字面量的区别"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">new和字面量的区别</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-03-15 21:48:48" datetime="2019-03-15T13:48:48.000Z"  itemprop="datePublished">2019-03-15</time>
+
             
-            <h3 class="archive-separator">三月, 2019</h3>
-            <div class="waterfall">
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>在调用new的过程会发生4件事情：</p>
+<ol>
+<li>新生成一个对象</li>
+<li>链接到原型</li>
+<li>绑定this</li>
+<li>返回新对象</li>
+</ol>
+<p>试着自己实现一个new</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">create</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line">    <span class="keyword">let</span> Con = [].shift.call(<span class="built_in">arguments</span>);</span><br><span class="line">    obj.__proto__ = Con.apply(obj, <span class="built_in">arguments</span>);</span><br><span class="line">    <span class="keyword">let</span> result = Con.apply(obj, <span class="built_in">arguments</span>);</span><br><span class="line">    <span class="keyword">return</span> result <span class="keyword">instanceof</span> <span class="built_in">Object</span> ? result : obj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对于对象来说，其实都是通过new产生的，无论是function Foo()还是let a = {}。</p>
+<p>对于创建一个对象来说，更推荐实用字面量的方式创建对象，无论是性能上，还是可读性上。因为使用new Object()的方式创建对象需要通过作用域链一层层找到Object，但是字面量方式没有这个问题。</p>
+<p>function Foo(){} function就是个语法糖，内部等同于new Function()；let a = {a:1}这个字面量内部也是使用了new Object()。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
     
+    <footer>
+        <a href="https://re0gamer.com">
+            <img src="https://wx4.sinaimg.cn/mw690/6dd11bf2ly8frsisq6g6dj20k00k0wts.jpg" alt="Creanme">
+            Creanme
+        </a>
+    </footer>
+</blockquote>
 
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-03-15 21:48:48" datetime="2019-03-15T13:48:48.000Z"  itemprop="datePublished">2019-03-15</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/03/15/new和字面量的区别/">new和字面量的区别</a>
-    </h3>
-  
-
-
-
-    
-  </article>
-</div>
-
-    
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-03-14 22:07:40" datetime="2019-03-14T14:07:40.000Z"  itemprop="datePublished">2019-03-14</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/03/14/GET与POST的区别/">GET与POST的区别</a>
-    </h3>
-  
-
-
-
-    
-    <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GET/">GET</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTP/">HTTP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/POST/">POST</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络通信/">网络通信</a></li></ul>
 
+
+        <div class="post-footer">
+            
+
+            
+
+
+        </div>
     </div>
-    
-  </article>
-</div>
 
     
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-03-13 21:18:41" datetime="2019-03-13T13:18:41.000Z"  itemprop="datePublished">2019-03-13</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/03/13/win10系统UWP应用自启动设置/">win10系统UWP应用自启动设置</a>
-    </h3>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
-
-
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UWP/">UWP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/win10/">win10</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自启动/">自启动</a></li></ul>
-
-    </div>
-    
-  </article>
-</div>
-
-    
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-03-09 23:28:22" datetime="2019-03-09T15:28:22.000Z"  itemprop="datePublished">2019-03-09</time>
-
-      
-
-
-    </div>
-    
-
-
   
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/03/09/遇到的部分面试问题/">遇到的部分面试问题</a>
-    </h3>
+    <div class="waves-block waves-effect next">
+      <a href="/2019/03/14/GET与POST的区别/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">GET与POST的区别</h4>
+      </a>
+    </div>
   
+</nav>
 
 
 
     
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/面试/">面试</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/面试题/">面试题</a></li></ul>
-
-    </div>
-    
-  </article>
-</div>
-
-    
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-03-08 22:29:53" datetime="2019-03-08T14:29:53.000Z"  itemprop="datePublished">2019-03-08</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/03/08/深夜排查小飞机故障/">深夜排查小飞机故障</a>
-    </h3>
-  
 
 
 
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VPN/">VPN</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小飞机/">小飞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搬瓦工/">搬瓦工</a></li></ul>
 
-    </div>
-    
-  </article>
-</div>
 
-    
-    </div>
 
-    
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
 </div>
 
         <footer class="footer">
