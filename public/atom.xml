@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2019-03-16T13:04:56.334Z</updated>
+  <updated>2019-03-19T13:43:13.766Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于盆骨前倾与睡眠</title>
+    <link href="https://re0gamer.com/2019/03/19/%E5%85%B3%E4%BA%8E%E7%9B%86%E9%AA%A8%E5%89%8D%E5%80%BE%E4%B8%8E%E7%9D%A1%E7%9C%A0/"/>
+    <id>https://re0gamer.com/2019/03/19/关于盆骨前倾与睡眠/</id>
+    <published>2019-03-19T13:34:18.000Z</published>
+    <updated>2019-03-19T13:43:13.766Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="盆骨前倾"><a href="#盆骨前倾" class="headerlink" title="盆骨前倾"></a>盆骨前倾</h2><p>之前一直别人说我屁股翘，屁股大，我都没太在意，大概在今年的时候才意识到这原来是盆骨前倾。因为长期的久坐造成的盆骨前倾与腰疼。</p><p>因为长期的腰疼，我一直在寻找解决的办法，前些天在某keep上看到有个关于盆骨前倾恢复的教程，便照着做了两天，有一些效果。</p><h2 id="睡眠"><a href="#睡眠" class="headerlink" title="睡眠"></a>睡眠</h2><p>我一直睡眠都不怎么好，因为经常晚睡，不运动。近段时间开始了夜跑，发现躺床上没多久就睡着了，完美解决了失眠的问题。建议失眠小伙伴们可以试试。不过主要还是因为这段时间离职，没事干，如果上班了估计很难坚持了吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;盆骨前倾&quot;&gt;&lt;a href=&quot;#盆骨前倾&quot; class=&quot;headerlink&quot; title=&quot;盆骨前倾&quot;&gt;&lt;/a&gt;盆骨前倾&lt;/h2&gt;&lt;p&gt;之前一直别人说我屁股翘，屁股大，我都没太在意，大概在今年的时候才意识到这原来是盆骨前倾。因为长期的久坐造成的盆骨前倾与腰疼。
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="https://re0gamer.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>组件之间的传值</title>
