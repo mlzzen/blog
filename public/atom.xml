@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2019-03-24T13:56:17.399Z</updated>
+  <updated>2019-03-24T14:19:39.422Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>yarn global安装的包在windows下无法运行</title>
+    <link href="https://re0gamer.com/2019/03/24/yarn-global%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85%E5%9C%A8windows%E4%B8%8B%E6%97%A0%E6%B3%95%E8%BF%90%E8%A1%8C/"/>
+    <id>https://re0gamer.com/2019/03/24/yarn-global安装的包在windows下无法运行/</id>
+    <published>2019-03-24T14:10:26.000Z</published>
+    <updated>2019-03-24T14:19:39.422Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>大概在2019年1月的时候，就遇到了使用yarn global安装包后运行报错的问题，看了一下大概是powershell相关的错误提示。然后去github上面看yarn的源码，yarn使用了cmd-shim来生成脚本，其中生成的powershell脚本有些问题，造成了此次yarn global安装包的问题。yarn的issues也有相关的bug反馈。</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>这段时间一直没有关注这件事，暂时使用npm的全局包代替。今天偶然间用yarn global安装了一个包然后又遇到了这个问题，然后再去yarn的issues看，最新的1.15.2版本已经修复了这个问题。然后我赶紧安装了最新的yarn，并使用yarn global upgrade升级所有全局安装的包，然后就正常了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;大概在2019年1月的时候，就遇到了使用yarn global安装包后运行报错的问题，看了一下大概是powershell相关的错误提示。然后
+      
+    
+    </summary>
+    
+    
+      <category term="yarn" scheme="https://re0gamer.com/tags/yarn/"/>
+    
+  </entry>
   
   <entry>
     <title>关于盆骨前倾与睡眠</title>
