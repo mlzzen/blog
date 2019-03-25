@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2019-03-24T14:19:39.422Z</updated>
+  <updated>2019-03-25T13:12:37.755Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浏览器的构成</title>
+    <link href="https://re0gamer.com/2019/03/25/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%9E%84%E6%88%90/"/>
+    <id>https://re0gamer.com/2019/03/25/浏览器的构成/</id>
+    <published>2019-03-25T13:07:34.000Z</published>
+    <updated>2019-03-25T13:12:37.755Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="浏览器的组成"><a href="#浏览器的组成" class="headerlink" title="浏览器的组成"></a>浏览器的组成</h2><p>浏览器大致由shell和内核组成，shell包括外壳，菜单，用户操作界面等等；内核一般分为渲染引擎和javascript引擎。</p><h2 id="javascript引擎"><a href="#javascript引擎" class="headerlink" title="javascript引擎"></a>javascript引擎</h2><h3 id="开发中"><a href="#开发中" class="headerlink" title="开发中"></a>开发中</h3><ul><li>SpiderMonkey用于Mozilla       Firefox</li><li>V8用于Chrome</li><li>JavaScriptCore用于Safari</li><li>Chakra(JScript引擎)-用于Internet       Explorer</li><li>Chakra(JavaScript引擎)-用于Microsoft       Edge</li></ul><h3 id="停止开发"><a href="#停止开发" class="headerlink" title="停止开发"></a>停止开发</h3><ul><li>Linear A，用于Opera       4.0至6.1版本。</li><li>Linear B，用于Opera       7.0至9.2版本。</li><li>Futhark，用于Opera 9.5至10.2版本。</li><li>Carakan，用于Opera 10.5至12.1版本。</li><li>Narcissus，开放源代码，由布兰登·艾克编写（他也编写了SpiderMonkey）。</li><li>Tamarin，由Adobe Labs编写。</li></ul><h2 id="排版引擎"><a href="#排版引擎" class="headerlink" title="排版引擎"></a>排版引擎</h2><h3 id="活跃"><a href="#活跃" class="headerlink" title="活跃"></a>活跃</h3><ul><li>Blink-Chrome</li><li>EdgeHTML-Microsfot EDGE</li><li>Gecko-Mozilla Firefox</li><li>Webkit-Safari</li></ul><h3 id="停止开发-1"><a href="#停止开发-1" class="headerlink" title="停止开发"></a>停止开发</h3><ul><li>Presto-老Opera，新Opera用的Blink</li><li>Trident-IE</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;浏览器的组成&quot;&gt;&lt;a href=&quot;#浏览器的组成&quot; class=&quot;headerlink&quot; title=&quot;浏览器的组成&quot;&gt;&lt;/a&gt;浏览器的组成&lt;/h2&gt;&lt;p&gt;浏览器大致由shell和内核组成，shell包括外壳，菜单，用户操作界面等等；内核一般分为渲染引擎和java
+      
+    
+    </summary>
+    
+    
+      <category term="浏览器" scheme="https://re0gamer.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+      <category term="引擎" scheme="https://re0gamer.com/tags/%E5%BC%95%E6%93%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>yarn global安装的包在windows下无法运行</title>
