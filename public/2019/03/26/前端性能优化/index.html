@@ -14,25 +14,25 @@
     
     
     
-    <title>浏览器的构成 | 阿良良的博客</title>
+    <title>前端性能优化 | 阿良良的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="浏览器,引擎">
-    <meta name="description" content="浏览器的组成浏览器大致由shell和内核组成，shell包括外壳，菜单，用户操作界面等等；内核一般分为渲染引擎和javascript引擎。 javascript引擎开发中 SpiderMonkey用于Mozilla       Firefox V8用于Chrome JavaScriptCore用于Safari Chakra(JScript引擎)-用于Internet       Explorer">
-<meta name="keywords" content="浏览器,引擎">
+    <meta name="keywords" content="前端,性能,优化">
+    <meta name="description" content="页面内容 减少HTTP请求数 合并javascript、css文件。 使用css sprite(逐步被Icon，svg sprite取代)   减少DNS查询 避免重定向 HTTP重定向通过301/302状态码实现   缓存ajax请求 延迟加载 非首屏使用的数据、样式、脚本、图片等。 用户交互时才会显示的内容。   预先加载 减少DOM元素数量 划分内容到不同域名 尽量减少iframe使用 优点">
+<meta name="keywords" content="前端,性能,优化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浏览器的构成">
-<meta property="og:url" content="https://re0gamer.com/2019/03/25/浏览器的构成/index.html">
+<meta property="og:title" content="前端性能优化">
+<meta property="og:url" content="https://re0gamer.com/2019/03/26/前端性能优化/index.html">
 <meta property="og:site_name" content="阿良良的博客">
-<meta property="og:description" content="浏览器的组成浏览器大致由shell和内核组成，shell包括外壳，菜单，用户操作界面等等；内核一般分为渲染引擎和javascript引擎。 javascript引擎开发中 SpiderMonkey用于Mozilla       Firefox V8用于Chrome JavaScriptCore用于Safari Chakra(JScript引擎)-用于Internet       Explorer">
+<meta property="og:description" content="页面内容 减少HTTP请求数 合并javascript、css文件。 使用css sprite(逐步被Icon，svg sprite取代)   减少DNS查询 避免重定向 HTTP重定向通过301/302状态码实现   缓存ajax请求 延迟加载 非首屏使用的数据、样式、脚本、图片等。 用户交互时才会显示的内容。   预先加载 减少DOM元素数量 划分内容到不同域名 尽量减少iframe使用 优点">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-25T13:12:37.755Z">
+<meta property="og:updated_time" content="2019-03-26T14:47:03.869Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浏览器的构成">
-<meta name="twitter:description" content="浏览器的组成浏览器大致由shell和内核组成，shell包括外壳，菜单，用户操作界面等等；内核一般分为渲染引擎和javascript引擎。 javascript引擎开发中 SpiderMonkey用于Mozilla       Firefox V8用于Chrome JavaScriptCore用于Safari Chakra(JScript引擎)-用于Internet       Explorer">
+<meta name="twitter:title" content="前端性能优化">
+<meta name="twitter:description" content="页面内容 减少HTTP请求数 合并javascript、css文件。 使用css sprite(逐步被Icon，svg sprite取代)   减少DNS查询 避免重定向 HTTP重定向通过301/302状态码实现   缓存ajax请求 延迟加载 非首屏使用的数据、样式、脚本、图片等。 用户交互时才会显示的内容。   预先加载 减少DOM元素数量 划分内容到不同域名 尽量减少iframe使用 优点">
     
         <link rel="alternate" type="application/atom+xml" title="阿良良的博客" href="/atom.xml">
     
@@ -120,7 +120,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">浏览器的构成</div>
+        <div class="flex-col header-title ellipsis">前端性能优化</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -138,11 +138,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">浏览器的构成</h1>
+        <h1 class="title">前端性能优化</h1>
         <h5 class="subtitle">
             
-                <time datetime="2019-03-25T13:07:34.000Z" itemprop="datePublished" class="page-time">
-  2019-03-25
+                <time datetime="2019-03-26T14:42:48.000Z" itemprop="datePublished" class="page-time">
+  2019-03-26
 </time>
 
 
@@ -161,18 +161,18 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浏览器的组成"><span class="post-toc-number">1.</span> <span class="post-toc-text">浏览器的组成</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#javascript引擎"><span class="post-toc-number">2.</span> <span class="post-toc-text">javascript引擎</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#开发中"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">开发中</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#停止开发"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">停止开发</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#排版引擎"><span class="post-toc-number">3.</span> <span class="post-toc-text">排版引擎</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#活跃"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">活跃</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#停止开发-1"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">停止开发</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#页面内容"><span class="post-toc-number">1.</span> <span class="post-toc-text">页面内容</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#服务器"><span class="post-toc-number">2.</span> <span class="post-toc-text">服务器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#cookie"><span class="post-toc-number">3.</span> <span class="post-toc-text">cookie</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#css"><span class="post-toc-number">4.</span> <span class="post-toc-text">css</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#javascript"><span class="post-toc-number">5.</span> <span class="post-toc-text">javascript</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#图片"><span class="post-toc-number">6.</span> <span class="post-toc-text">图片</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#移动端"><span class="post-toc-number">7.</span> <span class="post-toc-text">移动端</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-浏览器的构成"
+<article id="post-前端性能优化"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">浏览器的构成</h1>
+        <h1 class="post-card-title">前端性能优化</h1>
         <div class="post-meta">
-            <time class="post-time" title="2019-03-25 21:07:34" datetime="2019-03-25T13:07:34.000Z"  itemprop="datePublished">2019-03-25</time>
+            <time class="post-time" title="2019-03-26 22:42:48" datetime="2019-03-26T14:42:48.000Z"  itemprop="datePublished">2019-03-26</time>
 
             
 
@@ -185,31 +185,79 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="浏览器的组成"><a href="#浏览器的组成" class="headerlink" title="浏览器的组成"></a>浏览器的组成</h2><p>浏览器大致由shell和内核组成，shell包括外壳，菜单，用户操作界面等等；内核一般分为渲染引擎和javascript引擎。</p>
-<h2 id="javascript引擎"><a href="#javascript引擎" class="headerlink" title="javascript引擎"></a>javascript引擎</h2><h3 id="开发中"><a href="#开发中" class="headerlink" title="开发中"></a>开发中</h3><ul>
-<li>SpiderMonkey用于Mozilla       Firefox</li>
-<li>V8用于Chrome</li>
-<li>JavaScriptCore用于Safari</li>
-<li>Chakra(JScript引擎)-用于Internet       Explorer</li>
-<li>Chakra(JavaScript引擎)-用于Microsoft       Edge</li>
+            <h2 id="页面内容"><a href="#页面内容" class="headerlink" title="页面内容"></a>页面内容</h2><ul>
+<li>减少HTTP请求数<ul>
+<li>合并javascript、css文件。</li>
+<li>使用css sprite(逐步被Icon，svg sprite取代)</li>
 </ul>
-<h3 id="停止开发"><a href="#停止开发" class="headerlink" title="停止开发"></a>停止开发</h3><ul>
-<li>Linear A，用于Opera       4.0至6.1版本。</li>
-<li>Linear B，用于Opera       7.0至9.2版本。</li>
-<li>Futhark，用于Opera 9.5至10.2版本。</li>
-<li>Carakan，用于Opera 10.5至12.1版本。</li>
-<li>Narcissus，开放源代码，由布兰登·艾克编写（他也编写了SpiderMonkey）。</li>
-<li>Tamarin，由Adobe Labs编写。</li>
+</li>
+<li>减少DNS查询</li>
+<li>避免重定向<ul>
+<li>HTTP重定向通过301/302状态码实现</li>
 </ul>
-<h2 id="排版引擎"><a href="#排版引擎" class="headerlink" title="排版引擎"></a>排版引擎</h2><h3 id="活跃"><a href="#活跃" class="headerlink" title="活跃"></a>活跃</h3><ul>
-<li>Blink-Chrome</li>
-<li>EdgeHTML-Microsfot EDGE</li>
-<li>Gecko-Mozilla Firefox</li>
-<li>Webkit-Safari</li>
+</li>
+<li>缓存ajax请求</li>
+<li>延迟加载<ul>
+<li>非首屏使用的数据、样式、脚本、图片等。</li>
+<li>用户交互时才会显示的内容。</li>
 </ul>
-<h3 id="停止开发-1"><a href="#停止开发-1" class="headerlink" title="停止开发"></a>停止开发</h3><ul>
-<li>Presto-老Opera，新Opera用的Blink</li>
-<li>Trident-IE</li>
+</li>
+<li>预先加载</li>
+<li>减少DOM元素数量</li>
+<li>划分内容到不同域名</li>
+<li>尽量减少iframe使用<ul>
+<li>优点：<ul>
+<li>可以用来加载速度较慢的第三方资源，如广告、徽章。</li>
+<li>可以作安全沙箱。</li>
+<li>可以并行下载脚本。</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>加载代价昂贵，即使是空的页面。</li>
+<li>阻塞页面load事件触发；</li>
+<li>内存问题。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>避免404错误</li>
+</ul>
+<h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><ul>
+<li>使用CDN</li>
+<li>添加Expires或者Cache-Control响应头</li>
+<li>启用Gzip</li>
+<li>配置Etag</li>
+<li>尽早输出缓冲</li>
+<li>Ajax请求使用GET方法</li>
+<li>避免图片src为空</li>
+</ul>
+<h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><ul>
+<li>减少cookie大小</li>
+<li>静态资源使用无cookie域名</li>
+</ul>
+<h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><ul>
+<li>把样式表表放在<head>中</head></li>
+<li>不要使用css表达式</li>
+<li>使用<link>代替@import</li>
+<li>不要使用filter</li>
+</ul>
+<h2 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h2><ul>
+<li>把脚本放在页面底部</li>
+<li>使用外部js和css</li>
+<li>压缩js和css</li>
+<li>移除重复脚本</li>
+<li>减少DOM操作</li>
+<li>使用高效的事件处理</li>
+</ul>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><ul>
+<li>优化图片</li>
+<li>优化CSS Sprite</li>
+<li>不要在HTML中缩放图片</li>
+<li>使用体积小、可缓存的favicon.ico</li>
+</ul>
+<h2 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h2><ul>
+<li>保持单个文件小于25kb</li>
+<li>打包内容为分段文档</li>
 </ul>
 
         </div>
@@ -229,7 +277,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/引擎/">引擎</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/浏览器/">浏览器</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/优化/">优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/性能/">性能</a></li></ul>
 
 
             
@@ -239,21 +287,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2019/03/26/前端性能优化/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">前端性能优化</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2019/03/24/yarn-global安装的包在windows下无法运行/" id="post-next" class="post-nav-link">
+      <a href="/2019/03/25/浏览器的构成/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">yarn global安装的包在windows下无法运行</h4>
+        <h4 class="title">浏览器的构成</h4>
       </a>
     </div>
   
