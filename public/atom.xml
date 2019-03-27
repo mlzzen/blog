@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2019-03-26T14:47:03.869Z</updated>
+  <updated>2019-03-27T15:21:53.183Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue的生命周期</title>
+    <link href="https://re0gamer.com/2019/03/27/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    <id>https://re0gamer.com/2019/03/27/vue的生命周期/</id>
+    <published>2019-03-27T15:19:07.000Z</published>
+    <updated>2019-03-27T15:21:53.183Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建前-后"><a href="#创建前-后" class="headerlink" title="创建前/后"></a>创建前/后</h2><p>在beforeCreated阶段，vue实例的挂载元素el和数据对象data都为undefined，还未初始化。在created阶段，vue实例的数据对象data有了，el还没有。</p><h2 id="载入前-后"><a href="#载入前-后" class="headerlink" title="载入前/后"></a>载入前/后</h2><p>在beforeMount阶段，vue实例的$el和data都初始化了，但还是挂载之前为虚拟的dom节点，data.message还未替换。在mounted阶段，vue实例挂载完成，data.message成功渲染。</p><h2 id="更新前-后"><a href="#更新前-后" class="headerlink" title="更新前/后"></a>更新前/后</h2><p>当data变化时，会触发beforeUpdate和updated方法。</p><h2 id="销毁前-后"><a href="#销毁前-后" class="headerlink" title="销毁前/后"></a>销毁前/后</h2><p>在执行destroy方法后，对data的改变不会再触发周期函数，说明此时vue实例已经解除了事件监听以及和dom的绑定，但是dom结构依然存在。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;创建前-后&quot;&gt;&lt;a href=&quot;#创建前-后&quot; class=&quot;headerlink&quot; title=&quot;创建前/后&quot;&gt;&lt;/a&gt;创建前/后&lt;/h2&gt;&lt;p&gt;在beforeCreated阶段，vue实例的挂载元素el和数据对象data都为undefined，还未初始化。在c
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="https://re0gamer.com/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>前端性能优化</title>
@@ -547,35 +570,6 @@
       <category term="vscode" scheme="https://re0gamer.com/tags/vscode/"/>
     
       <category term="vscode插件" scheme="https://re0gamer.com/tags/vscode%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>react native小知识</title>
-    <link href="https://re0gamer.com/2018/05/13/react-native%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
-    <id>https://re0gamer.com/2018/05/13/react-native小知识/</id>
-    <published>2018-05-13T12:38:54.000Z</published>
-    <updated>2019-03-07T15:19:05.265Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li>执行react-native run-android命令后，开始下载gradle文件，速度非常慢。<br> <pre>解决办法：<pre><code>1. 手动使用迅雷下载，迅雷下载好后，把文件放入到一个文件夹中，最好路径不带中文。2. 修改 项目名\android\gradle\wrapper 下的gradle-wrapper.properties，把下 载的地址改为自己已经下好的地址。distributionUrl=file\:///D:/gradle-2.14.1-all.zip  冒号要用\转</code></pre></pre></li><li>执行react-native run-android命令后，使用的vs的模拟器，连接不上模拟器。<br> <pre>解决办法： 参考的 <a href="http://www.cnblogs.com/tianma3798/p/5911395.html" target="_blank" rel="noopener">http://www.cnblogs.com/tianma3798/p/5911395.html</a><pre><code>1. 打开模拟器的“工具”菜单。2. 选项卡切换到Network。3. 使用命令adb connect 169.254.138.177:5555就连接上了。4. 重新运行命令react-native run-android。</code></pre></pre></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;执行react-native run-android命令后，开始下载gradle文件，速度非常慢。&lt;br&gt; &lt;pre&gt;解决办法：&lt;pre&gt;&lt;code&gt;1. 手动使用迅雷下载，迅雷下载好后，把文件放入到一个文件夹中，最好路径不带中文。
-2. 修改 项目名\andr
-      
-    
-    </summary>
-    
-    
-      <category term="react-native" scheme="https://re0gamer.com/tags/react-native/"/>
-    
-      <category term="react" scheme="https://re0gamer.com/tags/react/"/>
-    
-      <category term="开发工具" scheme="https://re0gamer.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   

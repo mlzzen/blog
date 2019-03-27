@@ -14,23 +14,25 @@
     
     
     
-    <title>Archives: 2019 | 阿良良的博客</title>
+    <title>vue的生命周期 | 阿良良的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="">
-    <meta name="description" content="博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿良良的博客">
-<meta property="og:url" content="https://re0gamer.com/archives/2019/page/2/index.html">
+    <meta name="keywords" content="vue">
+    <meta name="description" content="创建前/后在beforeCreated阶段，vue实例的挂载元素el和数据对象data都为undefined，还未初始化。在created阶段，vue实例的数据对象data有了，el还没有。 载入前/后在beforeMount阶段，vue实例的$el和data都初始化了，但还是挂载之前为虚拟的dom节点，data.message还未替换。在mounted阶段，vue实例挂载完成，data.mess">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue的生命周期">
+<meta property="og:url" content="https://re0gamer.com/2019/03/27/vue的生命周期/index.html">
 <meta property="og:site_name" content="阿良良的博客">
-<meta property="og:description" content="博客">
+<meta property="og:description" content="创建前/后在beforeCreated阶段，vue实例的挂载元素el和数据对象data都为undefined，还未初始化。在created阶段，vue实例的数据对象data有了，el还没有。 载入前/后在beforeMount阶段，vue实例的$el和data都初始化了，但还是挂载之前为虚拟的dom节点，data.message还未替换。在mounted阶段，vue实例挂载完成，data.mess">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-27T15:21:53.183Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿良良的博客">
-<meta name="twitter:description" content="博客">
+<meta name="twitter:title" content="vue的生命周期">
+<meta name="twitter:description" content="创建前/后在beforeCreated阶段，vue实例的挂载元素el和数据对象data都为undefined，还未初始化。在created阶段，vue实例的数据对象data有了，el还没有。 载入前/后在beforeMount阶段，vue实例的$el和data都初始化了，但还是挂载之前为虚拟的dom节点，data.message还未替换。在mounted阶段，vue实例挂载完成，data.mess">
     
         <link rel="alternate" type="application/atom+xml" title="阿良良的博客" href="/atom.xml">
     
@@ -46,7 +48,7 @@
 <body>
     <div id="loading" class="active"></div>
 
-    <aside id="menu"  >
+    <aside id="menu" class="hide" >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -72,7 +74,7 @@
               </a>
             </li>
         
-            <li class="waves-block waves-effect active">
+            <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 Archives
@@ -118,7 +120,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Archives</div>
+        <div class="flex-col header-title ellipsis">vue的生命周期</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -133,11 +135,17 @@
         
     </div>
 </header>
-<header class="content-header archives-header">
+<header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Archives</h1>
+        <h1 class="title">vue的生命周期</h1>
         <h5 class="subtitle">
+            
+                <time datetime="2019-03-27T15:19:07.000Z" itemprop="datePublished" class="page-time">
+  2019-03-27
+</time>
+
+
             
         </h5>
     </div>
@@ -147,90 +155,104 @@
 
 </header>
 
-<div class="container body-wrap fade">
-    
 
+<div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建前-后"><span class="post-toc-number">1.</span> <span class="post-toc-text">创建前/后</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#载入前-后"><span class="post-toc-number">2.</span> <span class="post-toc-text">载入前/后</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#更新前-后"><span class="post-toc-number">3.</span> <span class="post-toc-text">更新前/后</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#销毁前-后"><span class="post-toc-number">4.</span> <span class="post-toc-text">销毁前/后</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-vue的生命周期"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">vue的生命周期</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-03-27 23:19:07" datetime="2019-03-27T15:19:07.000Z"  itemprop="datePublished">2019-03-27</time>
+
             
-            <h3 class="archive-separator">三月, 2019</h3>
-            <div class="waterfall">
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="创建前-后"><a href="#创建前-后" class="headerlink" title="创建前/后"></a>创建前/后</h2><p>在beforeCreated阶段，vue实例的挂载元素el和数据对象data都为undefined，还未初始化。在created阶段，vue实例的数据对象data有了，el还没有。</p>
+<h2 id="载入前-后"><a href="#载入前-后" class="headerlink" title="载入前/后"></a>载入前/后</h2><p>在beforeMount阶段，vue实例的$el和data都初始化了，但还是挂载之前为虚拟的dom节点，data.message还未替换。在mounted阶段，vue实例挂载完成，data.message成功渲染。</p>
+<h2 id="更新前-后"><a href="#更新前-后" class="headerlink" title="更新前/后"></a>更新前/后</h2><p>当data变化时，会触发beforeUpdate和updated方法。</p>
+<h2 id="销毁前-后"><a href="#销毁前-后" class="headerlink" title="销毁前/后"></a>销毁前/后</h2><p>在执行destroy方法后，对data的改变不会再触发周期函数，说明此时vue实例已经解除了事件监听以及和dom的绑定，但是dom结构依然存在。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
     
+    <footer>
+        <a href="https://re0gamer.com">
+            <img src="https://wx4.sinaimg.cn/mw690/6dd11bf2ly8frsisq6g6dj20k00k0wts.jpg" alt="Creanme">
+            Creanme
+        </a>
+    </footer>
+</blockquote>
 
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-03-08 22:29:53" datetime="2019-03-08T14:29:53.000Z"  itemprop="datePublished">2019-03-08</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/03/08/深夜排查小飞机故障/">深夜排查小飞机故障</a>
-    </h3>
-  
-
-
-
-    
-    <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VPN/">VPN</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小飞机/">小飞机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搬瓦工/">搬瓦工</a></li></ul>
 
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
+
+            
+
+
+        </div>
     </div>
-    
-  </article>
-</div>
 
     
-            </div> 
-            <h3 class="archive-separator">一月, 2019</h3>
-            <div class="waterfall">
-    
-
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-01-01 23:19:02" datetime="2019-01-01T15:19:02.000Z"  itemprop="datePublished">2019-01-01</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/01/01/2019计划/">2019计划</a>
-    </h3>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
-
-
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/年初计划/">年初计划</a></li></ul>
-
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/03/26/前端性能优化/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">前端性能优化</h4>
+      </a>
     </div>
-    
-  </article>
-</div>
-
-    
-    </div>
-
-    
-<nav id="page-nav">
-    <div class="inner">
-    <a class="extend prev" rel="prev" href="/archives/2019/">上一页</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span>
-    </div>
+  
 </nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
 
 </div>
 
