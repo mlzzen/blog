@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>面试问题2 | 阿良良的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="面试">
+    <meta name="description" content="HTML 必考：你是如何理解 HTML 语义化的？    正确的标签做正确的事情   页面内容结构化   无CSS样子时也容易阅读，便于阅读维护和理解   便于浏览器、搜索引擎解析。 利于爬虫标记、利于SEO   meta viewport 是做什么用的，怎么写？    虚拟视口是为了让未做移动端优化的网站在窄屏设备上可以移动，缩放以查看不同区域。   但是对于用媒体查询针对窄屏做了优化的页面，这">
+<meta name="keywords" content="面试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试问题2">
+<meta property="og:url" content="https://re0gamer.com/2019/03/28/面试问题2/index.html">
+<meta property="og:site_name" content="阿良良的博客">
+<meta property="og:description" content="HTML 必考：你是如何理解 HTML 语义化的？    正确的标签做正确的事情   页面内容结构化   无CSS样子时也容易阅读，便于阅读维护和理解   便于浏览器、搜索引擎解析。 利于爬虫标记、利于SEO   meta viewport 是做什么用的，怎么写？    虚拟视口是为了让未做移动端优化的网站在窄屏设备上可以移动，缩放以查看不同区域。   但是对于用媒体查询针对窄屏做了优化的页面，这">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-28T13:17:20.443Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面试问题2">
+<meta name="twitter:description" content="HTML 必考：你是如何理解 HTML 语义化的？    正确的标签做正确的事情   页面内容结构化   无CSS样子时也容易阅读，便于阅读维护和理解   便于浏览器、搜索引擎解析。 利于爬虫标记、利于SEO   meta viewport 是做什么用的，怎么写？    虚拟视口是为了让未做移动端优化的网站在窄屏设备上可以移动，缩放以查看不同区域。   但是对于用媒体查询针对窄屏做了优化的页面，这">
+    
+        <link rel="alternate" type="application/atom+xml" title="阿良良的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://wx4.sinaimg.cn/mw690/6dd11bf2ly8frsisq6g6dj20k00k0wts.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Creanme</h5>
+          <a href="mailto:creanme@live.com" title="creanme@live.com" class="mail">creanme@live.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/creanme" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">面试问题2</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">面试问题2</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-03-28T13:16:57.000Z" itemprop="datePublished" class="page-time">
+  2019-03-28
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTML"><span class="post-toc-number">1.</span> <span class="post-toc-text">HTML</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#CSS"><span class="post-toc-number">2.</span> <span class="post-toc-text">CSS</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#仅居中元素定宽高适用"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">仅居中元素定宽高适用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#居中元素不定宽高"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">居中元素不定宽高</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#原生-JS"><span class="post-toc-number">3.</span> <span class="post-toc-text">原生 JS</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#DOM"><span class="post-toc-number">4.</span> <span class="post-toc-text">DOM</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTTP"><span class="post-toc-number">5.</span> <span class="post-toc-text">HTTP</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#框架Vue"><span class="post-toc-number">6.</span> <span class="post-toc-text">框架Vue</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#React"><span class="post-toc-number">7.</span> <span class="post-toc-text">React</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#TypeScript"><span class="post-toc-number">8.</span> <span class="post-toc-text">TypeScript</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Webpack"><span class="post-toc-number">9.</span> <span class="post-toc-text">Webpack</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安全"><span class="post-toc-number">10.</span> <span class="post-toc-text">安全</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#开发题目"><span class="post-toc-number">11.</span> <span class="post-toc-text">开发题目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#超纲题目"><span class="post-toc-number">12.</span> <span class="post-toc-text">超纲题目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#个性化题目"><span class="post-toc-number">13.</span> <span class="post-toc-text">个性化题目</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-面试问题2"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">面试问题2</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-03-28 21:16:57" datetime="2019-03-28T13:16:57.000Z"  itemprop="datePublished">2019-03-28</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><ol>
+<li><p>必考：你是如何理解 HTML 语义化的？</p>
+<blockquote>
+<p>  正确的标签做正确的事情</p>
+<p>  页面内容结构化</p>
+<p>  无CSS样子时也容易阅读，便于阅读维护和理解</p>
+<p>  便于浏览器、搜索引擎解析。 利于爬虫标记、利于SEO</p>
+</blockquote>
+</li>
+<li><p>meta viewport 是做什么用的，怎么写？</p>
+<blockquote>
+<p>  虚拟视口是为了让未做移动端优化的网站在窄屏设备上可以移动，缩放以查看不同区域。</p>
+<p>  但是对于用媒体查询针对窄屏做了优化的页面，这种机制不大好，比如如果虚拟视口宽 980px，那么在 640px 或 480px 或更小宽度要起作用的媒体查询就不会触发了，浪费了这些响应式设计。</p>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;   <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1, maximum-scale=1"</span>&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>  <code>width</code>属性控制视口的宽度。可以像<code>width=600</code>这样设为确切的像素数，或者设为<code>device-width</code> 特殊值，代表缩放为 100% 时以 CSS 像素计量的屏幕宽度。（相应的也有<code>height</code>及<code>device-height</code>属性，可能对包含基于视口高度调整大小及位置的元素的页面有用。）</p>
+<p>  <code>initial-scale</code> 属性控制页面最初加载时的缩放等级。maximum-scale、minimum-scale及user-scalable属性控制允许用户以怎样的方式放大或缩小页面。</p>
+</blockquote>
+</li>
+<li><p>你用过哪些 HTML 5 标签？</p>
+<blockquote>
+<p>  header，aside，nav，section，article，footer，time，address，canvas，audio，video，source</p>
+</blockquote>
+</li>
+<li><p>H5 是什么？</p>
+<blockquote>
+<p>  前端在移动端的应用</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><ol>
+<li><p>必考：两种盒模型分别说一下。</p>
+<blockquote>
+<p>  标准盒模型：元素的width和height属性仅仅指content area</p>
+<p>  box-sizing: content-box</p>
+<p>  IE盒模型：元素的width和height属性由content area + padding + border组成</p>
+<p>  box-sizing: border-box</p>
+</blockquote>
+</li>
+<li><p>必考：如何垂直居中？</p>
+<blockquote>
+<h3 id="仅居中元素定宽高适用"><a href="#仅居中元素定宽高适用" class="headerlink" title="仅居中元素定宽高适用"></a>仅居中元素定宽高适用</h3><ul>
+<li><p>absolute + 负margin</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wp"</span>&gt;</span></span><br><span class="line">&gt;           <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box size"</span>&gt;</span>123123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&gt;       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="comment">/* 公共代码 */</span></span><br><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           border: 1px solid red;</span><br><span class="line">&gt;           <span class="selector-tag">width</span>: 300<span class="selector-tag">px</span>;</span><br><span class="line">&gt;           <span class="selector-tag">height</span>: 300<span class="selector-tag">px</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       </span><br><span class="line">&gt;       <span class="selector-class">.box</span> &#123;</span><br><span class="line">&gt;           background: green;    </span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       </span><br><span class="line">&gt;       <span class="selector-class">.box</span><span class="selector-class">.size</span>&#123;</span><br><span class="line">&gt;           width: 100px;</span><br><span class="line">&gt;           <span class="selector-tag">height</span>: 100<span class="selector-tag">px</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="comment">/* 公共代码 */</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</code></pre></blockquote>
+<blockquote>
+<pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           position: relative;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="selector-class">.box</span> &#123;</span><br><span class="line">&gt;           position: absolute;;</span><br><span class="line">&gt;           <span class="selector-tag">top</span>: 50%;</span><br><span class="line">&gt;           <span class="selector-tag">left</span>: 50%;</span><br><span class="line">&gt;           <span class="selector-tag">margin-left</span>: <span class="selector-tag">-50px</span>;</span><br><span class="line">&gt;           <span class="selector-tag">margin-top</span>: <span class="selector-tag">-50px</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</code></pre></blockquote>
+<blockquote>
+<ul>
+<li><p>absolute + margin auto</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           position: relative;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="selector-class">.box</span> &#123;</span><br><span class="line">&gt;           position: absolute;;</span><br><span class="line">&gt;           <span class="selector-tag">top</span>: 0;</span><br><span class="line">&gt;           <span class="selector-tag">left</span>: 0;</span><br><span class="line">&gt;           <span class="selector-tag">right</span>: 0;</span><br><span class="line">&gt;           <span class="selector-tag">bottom</span>: 0;</span><br><span class="line">&gt;           <span class="selector-tag">margin</span>: <span class="selector-tag">auto</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><p>absolute + calc</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           position: relative;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="selector-class">.box</span> &#123;</span><br><span class="line">&gt;           position: absolute;;</span><br><span class="line">&gt;           <span class="selector-tag">top</span>: <span class="selector-tag">calc</span>(50% <span class="selector-tag">-</span> 50<span class="selector-tag">px</span>);</span><br><span class="line">&gt;           <span class="selector-tag">left</span>: <span class="selector-tag">calc</span>(50% <span class="selector-tag">-</span> 50<span class="selector-tag">px</span>);</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<h3 id="居中元素不定宽高"><a href="#居中元素不定宽高" class="headerlink" title="居中元素不定宽高"></a>居中元素不定宽高</h3><ul>
+<li><p>absolute + transform</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           position: relative;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="selector-class">.box</span> &#123;</span><br><span class="line">&gt;           position: absolute;</span><br><span class="line">&gt;           <span class="selector-tag">top</span>: 50%;</span><br><span class="line">&gt;           <span class="selector-tag">left</span>: 50%;</span><br><span class="line">&gt;           <span class="selector-tag">transform</span>: <span class="selector-tag">translate</span>(<span class="selector-tag">-50</span>%, <span class="selector-tag">-50</span>%);</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><p>lineheight</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           line-height: 300px;</span><br><span class="line">&gt;           <span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line">&gt;           <span class="selector-tag">font-size</span>: 0<span class="selector-tag">px</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="selector-class">.box</span> &#123;</span><br><span class="line">&gt;           font-size: 16px;</span><br><span class="line">&gt;           <span class="selector-tag">display</span>: <span class="selector-tag">inline-block</span>;</span><br><span class="line">&gt;           <span class="selector-tag">vertical-align</span>: <span class="selector-tag">middle</span>;</span><br><span class="line">&gt;           <span class="selector-tag">line-height</span>: <span class="selector-tag">initial</span>;</span><br><span class="line">&gt;           <span class="selector-tag">text-align</span>: <span class="selector-tag">left</span>; <span class="comment">/* 修正文字 */</span></span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><p>writing-mode</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wp"</span>&gt;</span></span><br><span class="line">&gt;           <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wp-inner"</span>&gt;</span></span><br><span class="line">&gt;               <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span>123123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&gt;           <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&gt;       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           writing-mode: vertical-lr;</span><br><span class="line">&gt;           <span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="selector-class">.wp-inner</span> &#123;</span><br><span class="line">&gt;           writing-mode: horizontal-tb;</span><br><span class="line">&gt;           <span class="selector-tag">display</span>: <span class="selector-tag">inline-block</span>;</span><br><span class="line">&gt;           <span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line">&gt;           <span class="selector-tag">width</span>: 100%;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="selector-class">.box</span> &#123;</span><br><span class="line">&gt;           display: inline-block;</span><br><span class="line">&gt;           <span class="selector-tag">margin</span>: <span class="selector-tag">auto</span>;</span><br><span class="line">&gt;           <span class="selector-tag">text-align</span>: <span class="selector-tag">left</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</code></pre></blockquote>
+<blockquote>
+<ul>
+<li><p>table</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">&gt;           <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">&gt;               <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">&gt;                   <span class="tag">&lt;<span class="name">td</span> <span class="attr">class</span>=<span class="string">"wp"</span>&gt;</span></span><br><span class="line">&gt;                       <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span>123123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&gt;                   <span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">&gt;               <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">&gt;           <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">&gt;       <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;       .wp &#123;</span><br><span class="line">&gt;           text-align: center;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       .box &#123;</span><br><span class="line">&gt;           display: inline-block;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</code></pre></blockquote>
+<blockquote>
+<ul>
+<li><p>css-table</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;       &lt;div class=&quot;wp&quot;&gt;</span><br><span class="line">&gt;           &lt;div class=&quot;box&quot;&gt;123123&lt;/div&gt;</span><br><span class="line">&gt;       &lt;/div&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;       .wp &#123;</span><br><span class="line">&gt;           display: table-cell;</span><br><span class="line">&gt;           text-align: center;</span><br><span class="line">&gt;           vertical-align: middle;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       .box &#123;</span><br><span class="line">&gt;           display: inline-block;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</code></pre></blockquote>
+<blockquote>
+<ul>
+<li><p>flex</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           display: flex;</span><br><span class="line">&gt;           <span class="selector-tag">justify-content</span>: <span class="selector-tag">center</span>;</span><br><span class="line">&gt;           <span class="selector-tag">align-items</span>: <span class="selector-tag">center</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><p>grid</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;       <span class="selector-class">.wp</span> &#123;</span><br><span class="line">&gt;           display: grid;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;       <span class="selector-class">.box</span> &#123;</span><br><span class="line">&gt;           align-self: center;</span><br><span class="line">&gt;           <span class="selector-tag">justify-self</span>: <span class="selector-tag">center</span>;</span><br><span class="line">&gt;       &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<pre><code>| 方法                   | 居中元素定宽高固定 | PC兼容性                     | 移动端兼容性      |
+| :--------------------- | :----------------- | :--------------------------- | :---------------- |
+| absolute + 负margin    | 是                 | ie6+, chrome4+, firefox2+    | 安卓2.3+, iOS6+   |
+| absolute + margin auto | 是                 | ie6+, chrome4+, firefox2+    | 安卓2.3+, iOS6+   |
+| absolute + calc        | 是                 | ie9+, chrome19+, firefox4+   | 安卓4.4+, iOS6+   |
+| absolute + transform   | 否                 | ie9+, chrome4+, firefox3.5+  | 安卓3+, iOS6+     |
+| writing-mode           | 否                 | ie6+, chrome4+, firefox3.5+  | 安卓2.3+, iOS5.1+ |
+| lineheight             | 否                 | ie6+, chrome4+, firefox2+    | 安卓2.3+, iOS6+   |
+| table                  | 否                 | ie6+, chrome4+, firefox2+    | 安卓2.3+, iOS6+   |
+| css-table              | 否                 | ie8+, chrome4+, firefox2+    | 安卓2.3+, iOS6+   |
+| flex                   | 否                 | ie10+, chrome4+, firefox2+   | 安卓2.3+, iOS6+   |
+| grid                   | 否                 | ie10+, chrome57+, firefox52+ | 安卓6+, iOS10.3+  |
+</code></pre></blockquote>
+</li>
+<li><p>必考：flex 怎么用，常用属性有哪些？</p>
+</li>
+<li><p>必考：BFC 是什么？</p>
+</li>
+<li><p>CSS 选择器优先级</p>
+</li>
+<li><p>清除浮动说一下</p>
+</li>
+</ol>
+<h2 id="原生-JS"><a href="#原生-JS" class="headerlink" title="原生 JS"></a>原生 JS</h2><ol>
+<li>必考：ES 6 语法知道哪些，分别怎么用？</li>
+<li>必考 Promise、Promise.all、Promise.race 分别怎么用？</li>
+<li>必考：手写函数防抖和函数节流</li>
+<li>必考：手写AJAX</li>
+<li>必考：这段代码里的 this 是什么？</li>
+<li>必考：闭包/立即执行函数是什么？</li>
+<li>必考：什么是 JSONP，什么是 CORS，什么是跨域？</li>
+<li>常考：async/await 怎么用，如何捕获异常？</li>
+<li>常考：如何实现深拷贝？</li>
+<li>常考：如何用正则实现 trim()？</li>
+<li>常考：不用 class 如何实现继承？用 class 又如何实现？</li>
+<li>常考：如何实现数组去重？</li>
+<li>放弃：== 相关题目（反着答）</li>
+<li>送命题：手写一个 Promise</li>
+</ol>
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><ol>
+<li>必考：事件委托</li>
+<li>曾考：用 mouse 事件写一个可拖曳的 div</li>
+</ol>
+<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><ol>
+<li>必考：HTTP 状态码知道哪些？分别什么意思？</li>
+<li>大公司必考：HTTP 缓存有哪几种？</li>
+<li>必考：GET 和 POST 的区别</li>
+<li>Cookie V.S. LocalStorage V.S. SessionStorage V.S. Session</li>
+</ol>
+<h2 id="框架Vue"><a href="#框架Vue" class="headerlink" title="框架Vue"></a>框架Vue</h2><ol>
+<li>必考：watch 和 computed 和 methods 区别是什么？</li>
+<li>必考：Vue 有哪些生命周期钩子函数？分别有什么用？</li>
+<li>必考：Vue 如何实现组件间通信？</li>
+<li>必考：Vue 数据响应式怎么做到的？</li>
+<li>必考：Vue.set 是做什么用的？</li>
+<li>Vuex 你怎么用的？</li>
+<li>VueRouter 你怎么用的？</li>
+<li>路由守卫是什么？</li>
+</ol>
+<h2 id="React"><a href="#React" class="headerlink" title="React"></a>React</h2><ol>
+<li>必考：受控组件 V.S. 非受控组件</li>
+<li>必考：React 有哪些生命周期函数？分别有什么用？（Ajax 请求放在哪个阶段？）</li>
+<li>必考：React 如何实现组件间通信？</li>
+<li>必考：shouldComponentUpdate 有什么用？</li>
+<li>必考：虚拟 DOM 是什么？</li>
+<li>必考：什么是高阶组件？</li>
+<li>React diff 的原理是什么？</li>
+<li>必考 Redux 是什么？</li>
+<li>connect 的原理是什么？</li>
+</ol>
+<h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><ol>
+<li>never 类型是什么？</li>
+<li>TypeScript 比起 JavaScript 有什么优点？</li>
+</ol>
+<h2 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h2><ol>
+<li>必考：有哪些常见 loader 和 plugin，你用过哪些？</li>
+<li>英语题：loader 和 plugin 的区别是什么？</li>
+<li>必考：如何按需加载代码？</li>
+<li>必考：如何提高构建速度？</li>
+<li>转义出的文件过大怎么办？</li>
+</ol>
+<h2 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h2><ol>
+<li>必考：什么是 XSS？如何预防？</li>
+<li>必考：什么是 CSRF？如何预防？</li>
+</ol>
+<h2 id="开发题目"><a href="#开发题目" class="headerlink" title="开发题目"></a>开发题目</h2><ol>
+<li>必考：你遇到最难的问题是怎样的？</li>
+<li>你在团队的突出贡献是什么？</li>
+<li>最近在关注什么新技术</li>
+<li>有没有看什么源码，看了后有什么记忆深刻的地方，有什么收获</li>
+</ol>
+<h2 id="超纲题目"><a href="#超纲题目" class="headerlink" title="超纲题目"></a>超纲题目</h2><ol>
+<li>JS 垃圾回收机制</li>
+<li>Eventloop 说一下</li>
+</ol>
+<h2 id="个性化题目"><a href="#个性化题目" class="headerlink" title="个性化题目"></a>个性化题目</h2><ol>
+<li>PWA</li>
+<li>echarts.js / d3.js</li>
+<li>three.js</li>
+<li>flutter</li>
+<li>SSR</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <footer>
+        <a href="https://re0gamer.com">
+            <img src="https://wx4.sinaimg.cn/mw690/6dd11bf2ly8frsisq6g6dj20k00k0wts.jpg" alt="Creanme">
+            Creanme
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/面试/">面试</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/03/27/vue的生命周期/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">vue的生命周期</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Creanme &copy; 2015 - 2019</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备18016722号-1</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+<!-- 
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+ -->
+
+
+
+
+</body>
+</html>
