@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2019-03-28T13:17:20.443Z</updated>
+  <updated>2019-03-30T14:54:47.654Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>defer与async</title>
+    <link href="https://re0gamer.com/2019/03/30/defer%E4%B8%8Easync/"/>
+    <id>https://re0gamer.com/2019/03/30/defer与async/</id>
+    <published>2019-03-30T14:53:52.000Z</published>
+    <updated>2019-03-30T14:54:47.654Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>defer延迟脚本并不一定会按照顺序执行，也不一定会在DOMContentLoaded事件触发前执行，因此最好只包含一个defer延迟的脚本。defer属性只适用于外部脚本文件。</li><li>script标签的async属性目的是不让页面等待两个脚本下载和执行，从而异步加载页面其他内容，建议异步脚本不要在加载期间修改DOM。异步脚本一定会在页面的load事件前执行，但可能会在DOMContentLoaded事件触发之前或之后执行。</li><li>defer与async不同：defer要页面解析完了，才执行defer的脚本，而async是按顺序加载，只是不等待。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;defer延迟脚本并不一定会按照顺序执行，也不一定会在DOMContentLoaded事件触发前执行，因此最好只包含一个defer延迟的脚本。defer属性只适用于外部脚本文件。&lt;/li&gt;
+&lt;li&gt;script标签的async属性目的是不让页面等待两个脚本下载和
+      
+    
+    </summary>
+    
+    
+      <category term="html" scheme="https://re0gamer.com/tags/html/"/>
+    
+      <category term="defer" scheme="https://re0gamer.com/tags/defer/"/>
+    
+      <category term="async" scheme="https://re0gamer.com/tags/async/"/>
+    
+  </entry>
   
   <entry>
     <title>面试问题2</title>
@@ -541,35 +570,6 @@
       <category term="nginx" scheme="https://re0gamer.com/tags/nginx/"/>
     
       <category term="https" scheme="https://re0gamer.com/tags/https/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vscode vue ts项目 prettier配置</title>
-    <link href="https://re0gamer.com/2018/05/24/vscode-vue-ts%E9%A1%B9%E7%9B%AE-prettier%E9%85%8D%E7%BD%AE/"/>
-    <id>https://re0gamer.com/2018/05/24/vscode-vue-ts项目-prettier配置/</id>
-    <published>2018-05-24T15:17:37.000Z</published>
-    <updated>2019-03-09T15:27:18.997Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="必装插件-Prettier-Code-formatter"><a href="#必装插件-Prettier-Code-formatter" class="headerlink" title="必装插件 Prettier - Code formatter"></a>必装插件 Prettier - Code formatter</h2><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="typescript-需要tslint和tslint-config-prettier"><a href="#typescript-需要tslint和tslint-config-prettier" class="headerlink" title="typescript 需要tslint和tslint-config-prettier"></a>typescript 需要tslint和tslint-config-prettier</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add -D tslint tslint-config-prettier</span><br></pre></td></tr></table></figure><p>根目录添加tslint.json</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;defaultSeverity&quot;: &quot;warning&quot;,</span><br><span class="line">    &quot;extend&quot;: [&quot;tslint:recommended&quot;, &quot;tslint-config-prettier&quot;],</span><br><span class="line">    &quot;linterOptions&quot;: &#123;</span><br><span class="line">        &quot;exclude&quot;: [&quot;node_modules/**&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;rules&quot;: &#123;</span><br><span class="line">        &quot;quotemark&quot;: [true, &quot;single&quot;],</span><br><span class="line">        &quot;indent&quot;: [true, &quot;spaces&quot;, 4],</span><br><span class="line">        &quot;interface-name&quot;: false,</span><br><span class="line">        &quot;ordered-imports&quot;: false,</span><br><span class="line">        &quot;object-literal-sort-keys&quot;: false,</span><br><span class="line">        &quot;no-consecutive-blank-lines&quot;: false</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="样式部分需要stylint和prettier-stylelint"><a href="#样式部分需要stylint和prettier-stylelint" class="headerlink" title="样式部分需要stylint和prettier-stylelint"></a>样式部分需要stylint和prettier-stylelint</h3><pre><code>yarn add -D stylelint prettier-stylelint stylelint-config-ydj</code></pre><p>根目录添加.stylelintrc.js</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">    extends: [</span><br><span class="line">        &apos;stylelint-config-ydj/scss&apos;, // your stylint config</span><br><span class="line">        &apos;./node_modules/prettier-stylelint/config.js&apos;</span><br><span class="line">    ],</span><br><span class="line">    rules: &#123;</span><br><span class="line">        &apos;string-quotes&apos;: &apos;double&apos;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h3 id="prettier配置，在根目录添加-prettierrc"><a href="#prettier配置，在根目录添加-prettierrc" class="headerlink" title="prettier配置，在根目录添加.prettierrc"></a>prettier配置，在根目录添加.prettierrc</h3><pre><code>{    &quot;eslintIntegration&quot;: true,    &quot;stylelintIntegration&quot;: true,    &quot;tabWidth&quot;: 4,    &quot;singleQuote&quot;: true,    &quot;semi&quot;: false}</code></pre><p>编辑器配置里面需要加入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// vetur configuration</span><br><span class="line">&quot;vetur.format.defaultFormatter.html&quot;: &quot;js-beautify-html&quot;,</span><br><span class="line"></span><br><span class="line">// prettier configuration</span><br><span class="line">&quot;prettier.disableLanguages&quot;: [</span><br><span class="line">    &quot;vue&quot;</span><br><span class="line">],</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;必装插件-Prettier-Code-formatter&quot;&gt;&lt;a href=&quot;#必装插件-Prettier-Code-formatter&quot; class=&quot;headerlink&quot; title=&quot;必装插件 Prettier - Code formatter&quot;&gt;&lt;/a&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="vscode" scheme="https://re0gamer.com/tags/vscode/"/>
-    
-      <category term="vue" scheme="https://re0gamer.com/tags/vue/"/>
-    
-      <category term="ts" scheme="https://re0gamer.com/tags/ts/"/>
-    
-      <category term="prettier" scheme="https://re0gamer.com/tags/prettier/"/>
     
   </entry>
   
