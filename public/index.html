@@ -154,6 +154,55 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-vue首页加载优化"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-04-01 23:20:53" datetime="2019-04-01T15:20:53.000Z"  itemprop="datePublished">2019-04-01</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/04/01/vue首页加载优化/">vue首页加载优化</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        
+参考自https://juejin.im/entry/5bc7ccefe51d450e543ecfac
+
+可以使用Webpack Bundle Analyzer分析所依赖的包大小以及所生成包
+引入CDN在html中使用script标签引入几个比较大的公共库，然后在webpack.conf.js里面增加配置12345externals: &#123;    &apos;vue&apos;: ...
+    
+
+        <a href="/2019/04/01/vue首页加载优化/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/优化/">优化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/首页/">首页</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-替换系统Calibri字体，使用onenote不难受"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -603,59 +652,6 @@ Chakra(JScript引擎)-用于Internet       Explor...
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-new和字面量的区别"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-03-15 21:48:48" datetime="2019-03-15T13:48:48.000Z"  itemprop="datePublished">2019-03-15</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/03/15/new和字面量的区别/">new和字面量的区别</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        在调用new的过程会发生4件事情：
-
-新生成一个对象
-链接到原型
-绑定this
-返回新对象
-
-试着自己实现一个new
-1234567function create() &#123;    let obj = &#123;&#125;;    let Con = [].shift.call(arguments);    obj.__proto__ = Con.apply(obj, argume...
-    
-
-        <a href="/2019/03/15/new和字面量的区别/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
     </div>
     

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://re0gamer.com/"/>
-  <updated>2019-03-31T06:47:54.372Z</updated>
+  <updated>2019-04-01T15:32:53.658Z</updated>
   <id>https://re0gamer.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue首页加载优化</title>
+    <link href="https://re0gamer.com/2019/04/01/vue%E9%A6%96%E9%A1%B5%E5%8A%A0%E8%BD%BD%E4%BC%98%E5%8C%96/"/>
+    <id>https://re0gamer.com/2019/04/01/vue首页加载优化/</id>
+    <published>2019-04-01T15:20:53.000Z</published>
+    <updated>2019-04-01T15:32:53.658Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>参考自<a href="https://juejin.im/entry/5bc7ccefe51d450e543ecfac" target="_blank" rel="noopener">https://juejin.im/entry/5bc7ccefe51d450e543ecfac</a></p></blockquote><p>可以使用Webpack Bundle Analyzer分析所依赖的包大小以及所生成包</p><h2 id="引入CDN"><a href="#引入CDN" class="headerlink" title="引入CDN"></a>引入CDN</h2><p>在html中使用script标签引入几个比较大的公共库，然后在webpack.conf.js里面增加配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">externals: &#123;</span><br><span class="line">    &apos;vue&apos;: &apos;Vue&apos;,</span><br><span class="line">    &apos;vue-router&apos;: &apos;VueRouter&apos;,</span><br><span class="line">    &apos;vuex&apos;: &apos;Vuex&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h2 id="代码分割"><a href="#代码分割" class="headerlink" title="代码分割"></a>代码分割</h2><h2 id="开启gzip压缩"><a href="#开启gzip压缩" class="headerlink" title="开启gzip压缩"></a>开启gzip压缩</h2><p>可以使用CompressionWebpackPlugin插件提前压缩文件</p><h2 id="使用缓存"><a href="#使用缓存" class="headerlink" title="使用缓存"></a>使用缓存</h2><p>nginx默认会开启缓存，对静态文件的响应加上Etag，二次加载就会从缓存中读取。</p><h2 id="使用SSR（服务端渲染）"><a href="#使用SSR（服务端渲染）" class="headerlink" title="使用SSR（服务端渲染）"></a>使用SSR（服务端渲染）</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;参考自&lt;a href=&quot;https://juejin.im/entry/5bc7ccefe51d450e543ecfac&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://juejin.im/entry/5bc7cce
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="https://re0gamer.com/tags/vue/"/>
+    
+      <category term="首页" scheme="https://re0gamer.com/tags/%E9%A6%96%E9%A1%B5/"/>
+    
+      <category term="优化" scheme="https://re0gamer.com/tags/%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>替换系统Calibri字体，使用onenote不难受</title>
@@ -141,11 +169,11 @@
     </summary>
     
     
+      <category term="优化" scheme="https://re0gamer.com/tags/%E4%BC%98%E5%8C%96/"/>
+    
       <category term="前端" scheme="https://re0gamer.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="性能" scheme="https://re0gamer.com/tags/%E6%80%A7%E8%83%BD/"/>
-    
-      <category term="优化" scheme="https://re0gamer.com/tags/%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
@@ -542,33 +570,6 @@
       <category term="powershell" scheme="https://re0gamer.com/tags/powershell/"/>
     
       <category term="脚本" scheme="https://re0gamer.com/tags/%E8%84%9A%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>子域名配置</title>
-    <link href="https://re0gamer.com/2018/06/07/%E5%AD%90%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/"/>
-    <id>https://re0gamer.com/2018/06/07/子域名配置/</id>
-    <published>2018-06-07T15:12:48.000Z</published>
-    <updated>2019-03-07T15:19:05.269Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="域名管理处的配置"><a href="#域名管理处的配置" class="headerlink" title="域名管理处的配置"></a>域名管理处的配置</h2><p>我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dnspod.net f1g1ns2.dnspod.net。然后在dnspod 添加了*domain.com 泛域名解析，然后要等一会儿，毕竟namesilo是国外的域名商，我开始以为没有作用，然后反复试各种方法，浪费了很多时间。</p><h2 id="nginx-的配置"><a href="#nginx-的配置" class="headerlink" title="nginx 的配置"></a>nginx 的配置</h2><pre><code>server{    listen 80;    server_name  riyue.me;    if ($scheme != &quot;https&quot;) {        return 301 https://$host$request_uri;    }    root   /var/www/riyue;    index  index.php index.html index.htm;    location ~ \.php$ {        include /etc/nginx/fastcgi_params;        fastcgi_pass 127.0.0.1:9000;        fastcgi_index index.php;    }}server{    listen 80;    server_name  blog.riyue.me;    # if ($scheme != &quot;https&quot;) {    #     return 301 https://$host$request_uri;    # }    root   /var/www/blog/public;    index  index.php index.html index.htm;    location ~ \.php$ {        include /etc/nginx/fastcgi_params;        fastcgi_pass 127.0.0.1:9000;        fastcgi_index index.php;    }}</code></pre><h2 id="重启nginx"><a href="#重启nginx" class="headerlink" title="重启nginx"></a>重启nginx</h2><pre><code>nginx -s reload</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;域名管理处的配置&quot;&gt;&lt;a href=&quot;#域名管理处的配置&quot; class=&quot;headerlink&quot; title=&quot;域名管理处的配置&quot;&gt;&lt;/a&gt;域名管理处的配置&lt;/h2&gt;&lt;p&gt;我是把在namesilo处买的域名，然后把NameServers指向了 f1g1ns1.dn
-      
-    
-    </summary>
-    
-    
-      <category term="nginx" scheme="https://re0gamer.com/tags/nginx/"/>
-    
-      <category term="域名" scheme="https://re0gamer.com/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-      <category term="dns" scheme="https://re0gamer.com/tags/dns/"/>
     
   </entry>
   
