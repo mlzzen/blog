@@ -28,3 +28,5 @@ https://github.com/PowerShell/PowerShell/releases
 
 ## 试试成果
 ![以管理员权限打开powershell](http://wx3.sinaimg.cn/mw690/6dd11bf2gy1fucxr9jameg20v70l648v.gif)
+
+微博图床挂了好多
