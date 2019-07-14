@@ -70,6 +70,8 @@ module.exports = {
             { text: '文章', link: '/posts/', exact: false }
         ],
 
+        comments: false,
+
         // 分页配置
         pagination: {
             perPage: 20
