@@ -32,7 +32,7 @@ module.exports = {
             
             // 头像
             // 设置为外部链接
-            avatar: 'https://cdn.nlark.com/yuque/0/2019/png/88949/1559384815318-avatar/49fdf928-89ae-4ff6-ba39-05cf8f0cbff7.png',
+            avatar: 'http://wx2.sinaimg.cn/large/6dd11bf2ly8g1p6ze93bmj205k05k0u1.jpg',
             // 或者放置在 .vuepress/public 文件夹，例如 .vuepress/public/img/avatar.jpg
             // avatar: '/img/avatar.jpg',
 
