@@ -52,7 +52,7 @@ module.exports = {
             background: {
                 // 使用图片的 URL，如果设置了图片 URL，则不会生成随机变化的图案，下面的 useGeo 将失效
                 // 使用随机变化的图案，如果设置为 false，且没有设置图片 URL，将显示为空白背景
-                url: 'http://wx3.sinaimg.cn/large/6dd11bf2gy1g5prn13cl6j20xc0gt78i.jpg',
+                url: 'https://wx3.sinaimg.cn/large/6dd11bf2gy1g5prn13cl6j20xc0gt78i.jpg',
                 useGeo: true
             },
 
