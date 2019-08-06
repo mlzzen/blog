@@ -8,15 +8,15 @@ tags: [nginx, https]
 * 第一步 选择好使用的软件和系统，然后页面就自动滚动到了相应处。
 * 第二步 使用下面命令安装相关工具。
 
-    <pre>yum -y install yum-utils</pre>
-    <pre>yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional</pre>
+    `yum -y install yum-utils`
+    `yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional`
 
 * 第三步 安装python-cert-nginx 
-    <pre>$ sudo yum install python2-certbot-nginx</pre>
+    `$ sudo yum install python2-certbot-nginx`
 * 第四步 使用命令，获得证书
-    <pre>$ sudo certbot --nginx</pre>
+    `$ sudo certbot --nginx`
 * 第五步 打开nginx.conf 添加
-    <pre>
+    ```
     server {
         listen 443 ssl;
         server_name blog.riyue.me;
@@ -38,7 +38,7 @@ tags: [nginx, https]
                 try_files $uri $uri/ =404;
         }
     }
-    </pre>
+    ```
 
 * 第六步 重启nginx
 
