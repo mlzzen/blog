@@ -1,6 +1,6 @@
 module.exports = {
     // 网站 Title
-    title: '阿良良的博客',
+    title: '从零开始的人生',
     // 网站描述
     description: '阿亮的胡诌乱语',
 
