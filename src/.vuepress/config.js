@@ -67,7 +67,9 @@ module.exports = {
         // 顶部导航栏内容
         nav: [
             { text: '首页', link: '/', exact: true },
-            { text: '文章', link: '/posts/', exact: false }
+            { text: '文章', link: '/posts/', exact: false },
+            { text: '友链', link: '/links/', exact: false },
+            
         ],
 
         comments: false,
@@ -82,7 +84,9 @@ module.exports = {
             // 是否允许主题自动添加 Home 页面 (url: /)
             home: true,
             // 是否允许主题自动添加 Posts 页面 (url: /posts/)
-            posts: true
+            posts: true,
+            // 是否允许主题自动添加 Links 页面 (url: /links/)
+            links: true,
         }
     }
 };
