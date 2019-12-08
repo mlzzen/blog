@@ -8,7 +8,7 @@
         "build": "vuepress build src --dest public"
     },
     "dependencies": {
-        "vuepress": "^1.0.2",
-        "vuepress-theme-meteorlxy": "^1.0.1"
+        "vuepress": "^1.2.0",
+        "vuepress-theme-meteorlxy": "^1.7.1"
     }
 }
