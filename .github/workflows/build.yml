@@ -13,4 +13,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: cd /var/www/blog && git pull && yarn build
+        script: cd /var/www/blog && git pull && yarn && yarn build
