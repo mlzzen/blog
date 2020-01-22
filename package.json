@@ -4,11 +4,12 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "dev": "vuepress dev src",
-        "build": "vuepress build src --dest public"
+        "dev": "vuepress dev",
+        "build": "vuepress build --dest public"
     },
     "dependencies": {
+        "@vuepress/theme-blog": "^1.7.1",
         "vuepress": "^1.2.0",
-        "vuepress-theme-meteorlxy": "^1.7.1"
+        "vuepress-theme-lomo": "^1.0.1"
     }
 }
