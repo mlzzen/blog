@@ -10,6 +10,6 @@
     "dependencies": {
         "@vuepress/theme-blog": "^1.7.1",
         "vuepress": "^1.2.0",
-        "vuepress-theme-lomo": "^1.0.1"
+        "vuepress-theme-lomo": "@latest"
     }
 }
