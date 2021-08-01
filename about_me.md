@@ -1,3 +1,3 @@
 ## 关于我
-- 邮箱 creanme@live.com
-- github: github.com/creanme
+- 邮箱 mlzzen@qq.com
+- github: github.com/mlzzen
