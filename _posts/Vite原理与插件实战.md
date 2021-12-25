@@ -34,7 +34,7 @@ Vite 有一个开发服务器，它根据浏览器的请求编译源文件，不
 
 ## 来看 Vite 是如何加载运行的一段简单的 Vue3 代码
 
-App.vue
+### App.vue原代码
 
 ```html
 <template>
@@ -59,7 +59,7 @@ App.vue
 
 在浏览器中打开 localhost:3000/，会返回包含处理过的 index.html 中的内容
 
-原代码：
+### index原代码：
 
 ```html
 <!DOCTYPE html>
@@ -71,7 +71,7 @@ App.vue
 </html>
 ```
 
-Vite 处理过后返回的代码：
+### Vite 处理过后返回的代码：
 
 ```html {5-7}
 <!DOCTYPE html>
@@ -86,7 +86,7 @@ Vite 处理过后返回的代码：
 </html>
 ```
 
-## 后台中处理 HTML 中的代码
+### 后台中处理 HTML 中的代码
 
 读取 HTML 文件，在字符串中插入 script 标签，定义 process 变量
 
@@ -106,8 +106,9 @@ if (url == '/') {
 }
 ```
 
+### 原 main.js 代码：
+
 html 中的 script 标签会向后台请求/src/main.js 文件
-原 main.js 代码：
 
 ```js {1}
 import { createApp } from 'vue'
@@ -117,7 +118,7 @@ import './index.css'
 createApp(App).mount('#app')
 ```
 
-经过 Vite 处理后，main.js 代码：
+### 经过 Vite 处理后，main.js 代码：
 
 ```js {1}
 import { createApp } from '/@modules/vue'
@@ -128,6 +129,8 @@ createApp(App).mount('#app')
 ```
 
 `import { createApp } from 'vue'` 被重新成 `import { createApp } from '/@modules/vue'`了
+
+### 去请求node_modules中的文件
 
 接着浏览器向后台请求/@modules/vue，./App.vue, ./index.css。 后台收到/@modules/vue这样的请求，会去读取 node_modules/vue/package.json 的 module 字段，
 拿到 "dist/vue.runtime.esm-bundler.js"，接着去请求这个文件
@@ -143,9 +146,9 @@ if (url.startsWith('/@modules/')) {
 }
 ```
 
-main.js 里面还 import 了 App.vue，浏览器会向后台请求/src/App.vue
+### App.vue 原代码：
 
-App.vue 原代码：
+main.js 里面还 import 了 App.vue，浏览器会向后台请求/src/App.vue
 
 ```html
 <template>
@@ -169,7 +172,7 @@ App.vue 原代码：
 <style>h1 { color: red }</style>
 ```
 
-后台处理的代码：
+### 后台处理.vue的代码：
 
 ```js
 if (url.indexOf('.vue') > -1) {
@@ -196,7 +199,7 @@ if (url.indexOf('.vue') > -1) {
 }
 ```
 
-Vite 处理过的 App.vue：
+### Vite 处理过的 App.vue：
 
 ```js
 import { ref, computed } from '/@modules/vue'
@@ -216,6 +219,8 @@ export default __script
 ```
 
 这里主要是请求 template 里面的内容，发送一个/src/App.vue?type=template 请求
+
+### 经过后台处理过的App.vue的template：
 
 /src/App.vue?type=template 请求返回的内容：
 可以看到 compileDom.compile 函数把 App.vue 的 template 编译成一个 render 函数了
@@ -239,7 +244,8 @@ export function render(_ctx, _cache) {
 }
 ```
 
-后台处理style的代码：
+### 后台处理style的代码：
+
 ```js
 if (url.endsWith('.css')) {
     const p = path.resolve(__dirname, url.slice(1))
@@ -257,7 +263,8 @@ if (url.endsWith('.css')) {
 }
 ```
 
-./index.css请求返回的内容：
+### ./index.css请求返回的内容：
+
 ```js
 const css = 'h1 { color: red;}'
 let link = document.createElement('style')
@@ -270,7 +277,9 @@ export default css
 因为请求/@modules/vue返回的内容中import了/@modules/@vue/runtime-dom，所以浏览器会向后台请求/@modules/@vue/runtime-dom，
 直到把所有依赖请求加载完毕，然后页面才会渲染。
 
-插件代码：
+## 插件实战
+
+### 插件代码：
 ```ts
 export function filemanager(userOptions: UserOptions = {
     source: './dist',
@@ -299,7 +308,8 @@ export function filemanager(userOptions: UserOptions = {
 }
 ```
 
-vite.config.ts中的配置：
+### vite.config.ts中的配置：
+
 ```ts
 import { defineConfig } from 'vite'
 import { filemanager } from 'vite-plugin-filemanager'
