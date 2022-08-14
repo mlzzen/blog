@@ -1,3 +1,9 @@
+---
+title: windows终端使用nushell+oh-my-posh美化
+date: 2022-08-14 22:06:00
+tags: [terminal, nushell, oh-my-posh]
+---
+
 先看效果图
 
 ![1.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dfad52c6272b41f28eecd429506f3d7f~tplv-k3u1fbpfcp-watermark.image?)
