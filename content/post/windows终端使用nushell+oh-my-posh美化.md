@@ -18,7 +18,7 @@ github release下载速度可能会很慢，可以在这里下载[下载 (serctl
 ## 在微软商店安装windows terminal
 
 ## 在微软商店安装oh-my-posh
-也可以使用winget，不过需要科学上网。
+也可以使用winget，不过需要正确的上网方式。
 
 ## 初始化oh-my-posh
 ```powershell
