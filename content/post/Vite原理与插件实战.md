@@ -2,7 +2,7 @@
 title: Vite原理与插件实战
 date: 2021-12-25 16:50:00
 tags: [Vite]
-
+categories: [前端, 开发工具]
 ---
 
 ## Vite 是什么？

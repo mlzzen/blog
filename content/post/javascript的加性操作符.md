@@ -2,6 +2,7 @@
 title: javascript的加性操作符
 date: 2019-04-07 21:51:41
 tags: [javascript]
+categories: [前端]
 ---
 
 ## 加法

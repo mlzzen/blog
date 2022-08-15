@@ -2,6 +2,7 @@
 title: 把windows terminal添加到右键菜单
 date: 2019-11-11 17:44:22
 tags: [windows,terminal]
+categories: [开发工具]
 ---
 
 1. 从"https://github.com/microsoft/terminal/blob/master/res/terminal.ico"下载图标(可省略)

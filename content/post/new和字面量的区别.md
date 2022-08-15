@@ -2,6 +2,7 @@
 title: new和字面量的区别
 date: 2019-03-15 21:48:48
 tags: [javascript]
+categories: [前端]
 
 ---
 
