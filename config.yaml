@@ -1,7 +1,7 @@
 baseurl: https://mlzzen.vercel.app
 languageCode: zh-cn
 theme: hugo-theme-stack
-paginate: 5
+paginate: 15
 title: Liang' Blog
 
 # Change it to your Disqus shortname before using
