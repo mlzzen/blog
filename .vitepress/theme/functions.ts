@@ -3,7 +3,7 @@ type Post = {
         date: string
         title: string
         tags: string[]
-        description: string
+        description: string | undefined
     }
     regularPath: string
 }
