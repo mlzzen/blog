@@ -5,6 +5,8 @@ tags: [windows,terminal]
 categories: [开发工具]
 ---
 
+# 把windows terminal添加到右键菜单
+
 1. 从"https://github.com/microsoft/terminal/blob/master/res/terminal.ico"下载图标(可省略)
 2. 把图标放到某个文件夹内，比如"%%USERPROFILE%%\AppData\Local\terminal\"内
 3. 新建.bat文件，并把下列代码拷贝进去保存

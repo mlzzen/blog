@@ -5,6 +5,8 @@ tags: [vue, element-ui]
 categories: [前端]
 ---
 
+# el-select性能问题
+
 ```vue
 <template>
     <div id="app">

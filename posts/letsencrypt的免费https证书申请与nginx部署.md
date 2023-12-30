@@ -5,6 +5,8 @@ tags: [nginx, https]
 categories: [运维]
 ---
 
+# letsencrypt的免费https证书申请与nginx部署
+
 ## 使用certbot获取证书
 * 第一步 选择好使用的软件和系统，然后页面就自动滚动到了相应处。
 * 第二步 使用下面命令安装相关工具。

@@ -5,6 +5,7 @@ slug: 65d9b04c
 categories: 开发工具
 tags: [terminal, nushell, oh-my-posh]
 ---
+# Windows终端使用nushell+oh My Posh美化
 
 ## 从github安装nushell
 从github release下载 [Release 0.66.2 · nushell/nushell (github.com)](https://github.com/nushell/nushell/releases/tag/0.66.2)

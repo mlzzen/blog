@@ -5,6 +5,8 @@ tags: [typescript]
 categories: [前端]
 ---
 
+# 只留下value为函数的key
+
 ```typescript
 type FK = {
     fn: (n: string) => {}

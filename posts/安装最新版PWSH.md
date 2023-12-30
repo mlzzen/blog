@@ -5,6 +5,8 @@ tags: [powershell]
 categories: [开发工具]
 ---
 
+# 安装最新版powershell
+
 
 ## 安装最新版powershell
 微软把powershell开源了很久了，最新版要在github上面下载
