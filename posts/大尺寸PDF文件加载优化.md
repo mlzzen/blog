@@ -2,7 +2,7 @@
 title: 大尺寸PDF文件加载优化
 date: 2021-09-12 20:41:34
 tags: [PDF, pdf.js]
-categories: [前端]
+category: 前端
 ---
 
 # 大尺寸PDF文件加载优化

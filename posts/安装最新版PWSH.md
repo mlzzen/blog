@@ -2,7 +2,7 @@
 title: 安装最新版powershell
 date: 2018-08-17 20:27:31
 tags: [powershell]
-categories: [开发工具]
+category: 开发工具
 ---
 
 # 安装最新版powershell

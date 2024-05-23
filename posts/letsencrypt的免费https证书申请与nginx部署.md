@@ -2,7 +2,7 @@
 title: letsencrypt的免费https证书申请与nginx部署
 date: 2018-06-06 18:44:52
 tags: [nginx, https]
-categories: [运维]
+category: 运维
 ---
 
 # letsencrypt的免费https证书申请与nginx部署

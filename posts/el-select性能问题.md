@@ -2,7 +2,7 @@
 title: el-select性能问题
 date: 2023-12-27 21:25:00
 tags: [vue, element-ui]
-categories: [前端]
+category: 前端
 ---
 
 # el-select性能问题

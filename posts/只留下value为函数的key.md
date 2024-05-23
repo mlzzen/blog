@@ -2,7 +2,7 @@
 title: 只留下value为函数的key
 date: 2020-09-05 19:11:00
 tags: [typescript]
-categories: [前端]
+category: 前端
 ---
 
 # 只留下value为函数的key

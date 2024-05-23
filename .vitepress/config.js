@@ -13,30 +13,23 @@ export default defineConfig({
     appearance: 'light',
     themeConfig: {
         posts: await getPosts(pageSize),
-        website: 'https://github.com/mlzzen', //copyright link
+        website: 'https://github.com/mlzzen',
         nav: [
             { text: 'Home', link: '/' },
+            { text: 'Category', link: '/pages/category' },
             { text: 'Archives', link: '/pages/archives' },
             { text: 'Tags', link: '/pages/tags' },
             { text: 'About', link: '/pages/about' }
-            // { text: 'Airene', link: 'http://airene.net' }  -- External link test
         ],
         search: {
             provider: 'local',
         },
-        //outline:[2,3],
         outlineTitle: '文章摘要',
         socialLinks: [{ icon: 'github', link: 'https://github.com/mlzzen' }]
     },
-    srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
+    srcExclude: ['README.md'],
 
     vite: {
-        //build: { minify: false }
         server: { port: 5000 }
     }
-    /*
-      optimizeDeps: {
-          keepNames: true
-      }
-      */
 })

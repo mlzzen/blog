@@ -2,7 +2,7 @@
 title: "Windows终端使用nushell+oh My Posh美化"
 date: 2022-08-14T22:42:39+08:00
 slug: 65d9b04c
-categories: 开发工具
+category: 开发工具
 tags: [terminal, nushell, oh-my-posh]
 ---
 # Windows终端使用nushell+oh My Posh美化

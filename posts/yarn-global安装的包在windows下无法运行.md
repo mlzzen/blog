@@ -2,7 +2,7 @@
 title: yarn global安装的包在windows下无法运行
 date: 2019-03-24 22:10:26
 tags: [yarn]
-categories: [前端]
+category: 前端
 ---
 
 # yarn global安装的包在windows下无法运行

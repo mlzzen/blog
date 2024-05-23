@@ -2,7 +2,7 @@
 title: win10系统UWP应用自启动设置
 date: 2019-03-13 21:18:41
 tags: [win10, 自启动, UWP]
-categories: [其它]
+category: 其它
 ---
 
 # win10系统UWP应用自启动设置

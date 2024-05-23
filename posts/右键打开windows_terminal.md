@@ -2,7 +2,7 @@
 title: 把windows terminal添加到右键菜单
 date: 2019-11-11 17:44:22
 tags: [windows,terminal]
-categories: [开发工具]
+category: 开发工具
 ---
 
 # 把windows terminal添加到右键菜单

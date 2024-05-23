@@ -5,7 +5,7 @@
                 <a :href="withBase(article.regularPath)"> {{ article.frontMatter.title }}</a>
             </div>
         </div>
-        <p class="describe" v-html="article.frontMatter.description || ''"></p>
+        <p class="describe" v-html="article.frontMatter.description"></p>
         <div class='post-info'>
             {{ article.frontMatter.date }} <span v-for="item in article.frontMatter.tags"><a :href="withBase(`/pages/tags.html?tag=${item}`)"> {{ item }}</a></span>
         </div>
@@ -24,13 +24,8 @@
 
 <script lang="ts" setup>
 import { withBase } from 'vitepress'
-
-interface Article {
-    regularPath: string,
-}
-
 const props = defineProps({
-    posts: Array<Article>,
+    posts: Array,
     pageCurrent: Number,
     pagesNum: Number
 })
@@ -51,18 +46,7 @@ const props = defineProps({
     font-weight: 500;
     margin: 0.1rem 0;
 }
-.post-info {
-    font-size: 12px;
-}
-.post-info span {
-    display: inline-block;
-    padding: 0 8px;
-    background-color: var(--vp-c-bg-alt);
-    margin-right: 10px;
-    transition: 0.4s;
-    border-radius: 2px;
-    color: var(--vp-c-text-1);
-}
+
 .describe {
     font-size: 0.9375rem;
     display: -webkit-box;
@@ -88,7 +72,7 @@ const props = defineProps({
 }
 .link.active {
     background: var(--vp-c-text-1);
-    color: var(--vp-c-text-inverse-1);
+    color: var(--vp-c-neutral-inverse);
     border: 1px solid var(--vp-c-text-1) !important;
 }
 .link:first-child {

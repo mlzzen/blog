@@ -2,8 +2,9 @@ type Post = {
     frontMatter: {
         date: string
         title: string
+        category: string
         tags: string[]
-        description: string | undefined
+        description: string
     }
     regularPath: string
 }
@@ -22,6 +23,23 @@ export function initTags(post: Post[]) {
                     data[item].push(element)
                 }
             })
+        }
+    }
+    return data
+}
+
+export function initCategory(post: Post[]) {
+    const data: any = {}
+    for (let index = 0; index < post.length; index++) {
+        const element = post[index]
+        const category = element.frontMatter.category
+        if (category) {
+            if (data[category]) {
+                data[category].push(element)
+            } else {
+                data[category] = []
+                data[category].push(element)
+            }
         }
     }
     return data
