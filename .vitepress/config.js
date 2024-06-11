@@ -6,7 +6,7 @@ const pageSize = 10
 
 export default defineConfig({
     title: 'Liang\'s Blog',
-    base: '/',
+    base: '/blog/',
     cacheDir: './node_modules/vitepress_cache',
     description: 'vitepress,blog,blog-theme',
     ignoreDeadLinks: true,
