@@ -22,12 +22,10 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
-            - name: Debug - list root files
-              debug(ci): list root files to verify presence of pnpm-lock.yaml
-              run: ls -la
               with:
                   fetch-depth: 0
-
+            - name: Debug list root files
+              run: ls -la
             - name: Setup pnpm
               uses: pnpm/action-setup@v4
               with:
