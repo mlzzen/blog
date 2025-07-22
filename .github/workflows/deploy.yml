@@ -24,12 +24,10 @@ jobs:
               uses: actions/checkout@v4
               with:
                   fetch-depth: 0
-            - name: Debug list root files
-              run: ls -la
             - name: Setup pnpm
               uses: pnpm/action-setup@v4
               with:
-                  version: 8 # 根据你项目实际版本调整
+                  version: 10.13.1 # 根据你项目实际版本调整
 
             - name: Setup Node
               uses: actions/setup-node@v4
