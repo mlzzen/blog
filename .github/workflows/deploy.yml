@@ -22,6 +22,8 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
+            - name: Debug - list root files
+              debug(ci): list root files to verify presence of pnpm-lock.yamlrun: ls -la
               with:
                   fetch-depth: 0
 
